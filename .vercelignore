@@ -1,0 +1,8 @@
+.claude/
+.git/
+.vercel/
+node_modules/
+public/
+data/hockey_reference_cache/
+data/nhl_player_landing_cache/
+npm-debug.log*
