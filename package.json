@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "test": "node --test tests/test_clean_player_seasons.js tests/test_player_game_values.js tests/test_game_subset.js tests/test_team_board_pools.js tests/test_player_team_windows.js tests/test_team_window_board_pools.js tests/test_hockey_reference_point_shares.js tests/test_game_engine.js tests/test_serverless_card_data.js tests/test_draft_token.js tests/test_stateless_draft_state.js tests/test_stateless_api.js tests/test_rate_limit.js",
+    "build:serverless-cards": "node scripts/build_serverless_card_data.js",
+    "build": "npm run build:serverless-cards && node scripts/copy_headshot_assets.js && node scripts/copy_public_assets.js",
+    "build:clean": "node scripts/build_clean_player_seasons.js --start-season 19171918 --end-season 20252026",
+    "build:values": "node scripts/build_player_game_values.js --input data/clean_player_seasons.csv",
+    "build:board-pools": "node scripts/build_team_board_pools.js",
+    "build:windows": "node scripts/build_player_team_windows.js",
+    "build:window-board-pools": "node scripts/build_team_window_board_pools.js",
+    "build:hr-point-shares": "node scripts/build_hockey_reference_point_shares.js",
+    "download:hr-point-shares": "node scripts/build_hockey_reference_point_shares.js --download-only --resume-download --request-delay-ms 15000 --max-retries 6",
+    "download:hr-headshots": "node scripts/download_hockey_reference_headshots.js --delay-ms 15000",
+    "download:nhl-headshots": "node scripts/download_nhl_headshots.js",
+    "enrich:handedness:match": "node scripts/enrich_player_handedness_from_nhl_api.js --no-fetch",
+    "enrich:handedness": "node scripts/enrich_player_handedness_from_nhl_api.js",
+    "simulate:hr-draft": "node scripts/simulate_hockey_reference_draft_percentiles.js",
+    "dev": "node app/server.js"
+  },
+  "dependencies": {
+    "@vercel/firewall": "^1.2.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.*
+.vercel/
+.claude/
+/public/
+data/hockey_reference_cache/
+data/nhl_player_landing_cache/
+npm-debug.log*

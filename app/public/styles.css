@@ -1,0 +1,1063 @@
+/* =================================================================
+   11 Cups — design tokens
+   A small, deliberate system. Borders define containers only;
+   everything else separates with background + space.
+   Authored mobile-first: base = phone, min-width queries add width.
+   ================================================================= */
+:root {
+  color-scheme: dark;
+
+  /* ---- Surface ramp (one step per elevation) ---- */
+  --bg: #08090a;          /* page */
+  --panel: #101113;       /* cards, panels */
+  --panel-hi: #16171a;    /* hover / nested fill */
+  --inset: #0b0c0d;       /* wells, visual headers */
+
+  /* ---- Lines (used sparingly) ---- */
+  --line: rgba(255, 255, 255, 0.06);
+  --line-hi: rgba(255, 255, 255, 0.11);
+
+  /* ---- Text ramp ---- */
+  --fg: #f2f3f5;          /* primary */
+  --fg-2: #9a9ba2;        /* secondary */
+  --fg-3: #63646b;        /* labels, tertiary */
+
+  /* ---- Accent: monochrome. Primary action is light-on-dark.
+         Swap these four values to introduce a brand hue later. ---- */
+  --accent: #ededf0;          /* primary fill */
+  --accent-hi: #ffffff;       /* hover / emphasis text */
+  --accent-fg: #0a0a0b;       /* text on primary fill */
+  --accent-soft: rgba(255, 255, 255, 0.09);
+
+  /* ---- Status ---- */
+  --good: #54bd8a;
+  --bad: #e07a78;
+
+  /* ---- Radius (tight, two stops) ---- */
+  --r: 4px;
+  --r-lg: 6px;
+
+  /* ---- Layout rhythm ---- */
+  --pad: 16px;            /* panel padding, kept constant so insets align */
+
+  /* ---- Type ---- */
+  --font: "Segoe UI Variable Text", "Segoe UI", -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--fg);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--bg);
+  /* Stop iOS auto-inflating text in landscape */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  /* Belt-and-braces against horizontal scroll on small screens */
+  overflow-x: hidden;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  /* Larger tap highlight off; we handle focus ourselves */
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* Numeric values read as data, not prose */
+.card-rating span,
+.slot strong,
+.result-value,
+.breakdown-row strong {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+/* =================================================================
+   Shell + header  (mobile base)
+   ================================================================= */
+.shell {
+  width: min(1160px, 100%);
+  margin: 0 auto;
+  padding: 18px 14px 56px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand-block {
+  min-width: 0;
+}
+
+.eyebrow {
+  margin: 0 0 2px;
+  color: var(--fg-3);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--fg);
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--fg);
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  max-width: 46ch;
+  color: var(--fg-2);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.credit {
+  margin-top: 28px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--fg-3);
+  font-size: 12px;
+}
+
+.credit a {
+  color: var(--fg-2);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-hi);
+}
+
+.credit a:hover {
+  color: var(--fg);
+}
+
+/* =================================================================
+   Layout  (mobile: stacked; widens at >=920px)
+   ================================================================= */
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+}
+
+.board-panel,
+.roster-panel {
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--panel);
+  padding: var(--pad);
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.board-header {
+  padding-bottom: 14px;
+}
+
+/* Chips: text-led, no border */
+.board-size,
+.score-chip {
+  white-space: nowrap;
+  border-radius: var(--r);
+  padding: 3px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--fg-3);
+  background: var(--panel-hi);
+}
+
+.score-chip {
+  color: var(--accent-hi);
+  background: var(--accent-soft);
+}
+
+/* =================================================================
+   Mobile action row + slide-up sheets
+   Roster and Wild cards live in bottom sheets on phones/tablets,
+   triggered from this row. Desktop (>=920px) restores them inline.
+   ================================================================= */
+.mobile-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  background: var(--panel);
+  color: var(--fg);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 120ms ease, border-color 120ms ease;
+}
+
+.action-btn:hover {
+  background: var(--panel-hi);
+  border-color: var(--line-hi);
+}
+
+.action-btn:disabled {
+  color: var(--fg-3);
+  cursor: not-allowed;
+}
+
+.action-btn:focus-visible {
+  outline: 2px solid var(--accent-hi);
+  outline-offset: 1px;
+}
+
+body.sheet-locked {
+  overflow: hidden;
+}
+
+.action-meta {
+  flex: 0 0 auto;
+  min-width: 22px;
+  padding: 2px 7px;
+  border-radius: var(--r);
+  background: var(--panel-hi);
+  color: var(--fg-3);
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.sheet-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: rgba(5, 6, 7, 0.6);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 180ms ease, visibility 180ms ease;
+}
+
+.sheet-backdrop.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sheet-head-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sheet-close {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: var(--r);
+  background: var(--panel-hi);
+  color: var(--fg-2);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.sheet-close:hover {
+  background: #1d1e22;
+  color: var(--fg);
+}
+
+/* Roster as a bottom sheet on mobile (promoted from the layout column) */
+.roster-panel {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 45;
+  max-height: 86vh;
+  overflow-y: auto;
+  border: 0;
+  border-top: 1px solid var(--line-hi);
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
+  padding-bottom: calc(var(--pad) + env(safe-area-inset-bottom));
+  transform: translateY(101%);
+  transition: transform 240ms cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+.roster-panel.is-open {
+  transform: translateY(0);
+}
+
+/* =================================================================
+   Lifelines / Wild cards sheet
+   ================================================================= */
+.lifeline-row {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 45;
+  max-height: 86vh;
+  overflow-y: auto;
+  margin: 0;
+  padding: 16px var(--pad) calc(20px + env(safe-area-inset-bottom));
+  border-top: 1px solid var(--line-hi);
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
+  background: var(--panel);
+  transform: translateY(101%);
+  transition: transform 240ms cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+.lifeline-row.is-open {
+  transform: translateY(0);
+}
+
+.lifeline-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.lifeline-title {
+  color: var(--fg-3);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.help-button {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: var(--r);
+  background: var(--panel-hi);
+  color: var(--fg-2);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.help-button:hover {
+  background: #1d1e22;
+  color: var(--fg);
+}
+
+.help-button:focus-visible {
+  outline: 2px solid var(--accent-hi);
+  outline-offset: 1px;
+}
+
+/* Sheet content: full-width stacked actions */
+.lifelines {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.lifelines .life-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* =================================================================
+   Buttons — filled, borderless, sharp; touch-sized on mobile
+   ================================================================= */
+.primary {
+  height: 40px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: var(--r);
+  background: var(--accent);
+  color: var(--accent-fg);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 120ms ease;
+}
+
+.primary:hover {
+  background: var(--accent-hi);
+}
+
+.life-button,
+.position-button {
+  min-height: 40px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: var(--r);
+  background: var(--panel-hi);
+  color: var(--fg-2);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.life-button:hover:not(:disabled),
+.position-button:hover {
+  background: #1d1e22;
+  color: var(--fg);
+}
+
+.life-button:disabled {
+  background: transparent;
+  color: var(--fg-3);
+  cursor: not-allowed;
+}
+
+.position-button {
+  min-height: 48px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--fg);
+}
+
+/* Single, consistent focus treatment */
+.primary:focus-visible,
+.life-button:focus-visible,
+.position-button:focus-visible,
+.card:focus-visible {
+  outline: 2px solid var(--accent-hi);
+  outline-offset: 1px;
+}
+
+/* =================================================================
+   Board / player cards  (1-up on phones, 2-up when there's room)
+   ================================================================= */
+.board {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.card {
+  min-height: 232px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--panel);
+  color: var(--fg);
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border-color 120ms ease, background 120ms ease;
+}
+
+/* Hover only where there's a real pointer (no sticky hover on touch) */
+@media (hover: hover) {
+  .card:hover:not(:disabled) {
+    border-color: var(--line-hi);
+    background: var(--panel-hi);
+  }
+}
+
+.card:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.card-visual {
+  position: relative;
+  height: 108px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  background: var(--inset);
+}
+
+.team-logo {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  opacity: 0.14;
+  filter: grayscale(0.2) brightness(1.5);
+}
+
+.headshot,
+.headshot-fallback {
+  position: relative;
+  z-index: 1;
+  width: 80px;
+  height: 96px;
+  margin-left: 12px;
+  border-radius: var(--r) var(--r) 0 0;
+  background: var(--bg);
+  box-shadow: 0 0 0 1px var(--line-hi);
+}
+
+.headshot {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.headshot-fallback {
+  display: none;
+  place-items: center;
+  color: var(--fg-3);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.headshot-fallback.show {
+  display: grid;
+}
+
+.card-topline,
+.card-footerline,
+.card-rating {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-inline: 14px;
+}
+
+.card-topline {
+  padding-top: 4px;
+}
+
+.card-footerline {
+  margin-top: auto;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  color: var(--fg-3);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Badges: filled, borderless, tiny */
+.badge {
+  border-radius: var(--r);
+  padding: 2px 6px;
+  background: var(--panel-hi);
+  color: var(--fg-2);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.badge-team {
+  background: var(--accent-soft);
+  color: var(--accent-hi);
+}
+
+.card-title {
+  padding-inline: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--fg);
+}
+
+.card-secret {
+  padding-inline: 14px;
+  color: var(--bad);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.card-rating span {
+  border-radius: var(--r);
+  padding: 3px 7px;
+  background: var(--inset);
+  color: var(--fg-2);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* =================================================================
+   Roster
+   ================================================================= */
+.roster {
+  display: grid;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.slot-group {
+  border-radius: var(--r);
+  background: var(--inset);
+  padding: 4px 12px 8px;
+}
+
+.slot-group h3 {
+  margin: 0;
+  padding: 8px 0 2px;
+  color: var(--fg-3);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.slot {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 7px 0;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+}
+
+.slot:first-of-type {
+  border-top: 0;
+}
+
+.slot span {
+  min-width: 0;
+  font-weight: 500;
+  color: var(--fg);
+}
+
+.slot small {
+  color: var(--fg-3);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.slot strong {
+  color: var(--fg);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* =================================================================
+   Reveal
+   ================================================================= */
+.reveal {
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: var(--r-lg);
+  background: var(--inset);
+  color: var(--fg-2);
+}
+
+.reveal h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--fg);
+}
+
+.reveal .eyebrow {
+  color: var(--good);
+}
+
+.reveal p {
+  margin-bottom: 6px;
+}
+
+.reveal strong {
+  color: var(--fg);
+}
+
+/* =================================================================
+   Result
+   ================================================================= */
+.result {
+  margin-bottom: 14px;
+  padding: 16px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--panel);
+  color: var(--fg-2);
+}
+
+.result .eyebrow {
+  color: var(--accent-hi);
+}
+
+.result h2 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--fg);
+}
+
+.result-tagline {
+  margin: 6px 0 0;
+  max-width: 52ch;
+  color: var(--fg-2);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.result-section-title {
+  margin: 0 0 6px;
+  color: var(--fg-3);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.compatibility-board {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.result-box {
+  border-radius: var(--r);
+  background: var(--inset);
+  padding: 14px;
+}
+
+.result-value {
+  margin: 4px 0 0;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--fg);
+}
+
+.breakdown-row {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 7px 0;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+}
+
+.breakdown-row span {
+  min-width: 0;
+}
+
+.breakdown-row small,
+.result-box small {
+  display: block;
+  color: var(--fg-3);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.breakdown-row strong {
+  white-space: nowrap;
+  color: var(--fg);
+}
+
+.hidden {
+  display: none;
+}
+
+/* =================================================================
+   Position modal
+   ================================================================= */
+.position-menu {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(5, 5, 6, 0.7);
+  backdrop-filter: blur(6px);
+}
+
+.position-card {
+  width: min(340px, 100%);
+  padding: 20px;
+  border: 1px solid var(--line-hi);
+  border-radius: var(--r-lg);
+  background: var(--panel);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
+}
+
+.position-card h2 {
+  margin-bottom: 16px;
+}
+
+.position-actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+/* Shared modal backdrop (help + future dialogs) */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(5, 6, 7, 0.72);
+  backdrop-filter: blur(6px);
+}
+
+.help-card {
+  width: min(440px, 100%);
+  max-height: min(82vh, 660px);
+  overflow-y: auto;
+  border: 1px solid var(--line-hi);
+  border-radius: var(--r-lg);
+  background: var(--panel);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
+}
+
+.help-head {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px var(--pad) 12px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+}
+
+.help-head h2 {
+  font-size: 15px;
+}
+
+.help-close {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 auto;
+  border: 0;
+  border-radius: var(--r);
+  background: var(--panel-hi);
+  color: var(--fg-2);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.help-close:hover {
+  background: #1d1e22;
+  color: var(--fg);
+}
+
+.help-body {
+  padding: 14px var(--pad) 18px;
+}
+
+.help-body .result-section-title {
+  margin: 18px 0 4px;
+}
+
+.help-body .result-section-title:first-child {
+  margin-top: 0;
+}
+
+.help-note {
+  margin: 0 0 10px;
+  color: var(--fg-3);
+  font-size: 12px;
+}
+
+.help-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.help-list li {
+  display: grid;
+  gap: 2px;
+}
+
+.help-term {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--fg);
+}
+
+.help-desc {
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--fg-2);
+}
+
+/* =================================================================
+   Progressive enhancement
+   ----------------------------------------------------------------- */
+
+/* Roomy phones / small tablets: cards go 2-up, results break out,
+   lifelines flow inline instead of a rigid 2-col grid. */
+@media (min-width: 560px) {
+  .board {
+    gap: 10px;
+  }
+
+  .result-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .compatibility-board {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Desktop: two-column app shell, sticky roster, inline wild cards.
+   The mobile action row + sheet behaviour is fully reverted here. */
+@media (min-width: 920px) {
+  .shell {
+    padding: 32px 24px 80px;
+  }
+
+  .topbar {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+  }
+
+  /* Hide all the mobile-only sheet chrome */
+  .mobile-actions,
+  .sheet-backdrop,
+  .sheet-close {
+    display: none;
+  }
+
+  .layout {
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 16px;
+  }
+
+  /* Roster back to an inline sticky side panel */
+  .roster-panel {
+    position: sticky;
+    top: 16px;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    z-index: auto;
+    max-height: none;
+    overflow: visible;
+    border: 1px solid var(--line);
+    border-radius: var(--r-lg);
+    padding-bottom: var(--pad);
+    transform: none;
+    transition: none;
+  }
+
+  /* Wild cards back to the inline inset bar inside the board panel */
+  .lifeline-row {
+    position: static;
+    z-index: auto;
+    max-height: none;
+    overflow: visible;
+    margin: 0 calc(-1 * var(--pad));
+    padding: 12px var(--pad);
+    border-top: 1px solid var(--line);
+    border-radius: 0;
+    background: var(--inset);
+    transform: none;
+    transition: none;
+  }
+
+  .lifelines {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .lifelines .life-button {
+    width: auto;
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+
+  .primary {
+    height: 34px;
+    font-size: 13px;
+  }
+
+  .life-button {
+    min-height: 30px;
+    font-size: 12px;
+  }
+
+  .result {
+    padding: 20px;
+  }
+
+  .result h2 {
+    font-size: 26px;
+  }
+}

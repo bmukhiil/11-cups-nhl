@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>11 Cups Draft</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main id="app">
+      <section class="shell">
+        <header class="topbar">
+          <div class="brand-block">
+            <div>
+              <h1>Can you win 6 cups?</h1>
+              <p class="subtitle">Ken Dryden won 6 — the most by any player in the modern era.</p>
+            </div>
+          </div>
+          <button id="new-game" class="primary">New Draft</button>
+        </header>
+
+        <div class="mobile-actions">
+          <button id="open-roster" class="action-btn" type="button">
+            <span class="action-label">Roster</span>
+            <span id="roster-count" class="action-meta">0/7</span>
+          </button>
+          <button id="open-wildcards" class="action-btn" type="button">
+            <span class="action-label">Wild cards</span>
+            <span id="wild-count" class="action-meta">0</span>
+          </button>
+        </div>
+
+        <section id="result" class="result hidden"></section>
+
+        <section class="layout">
+          <section class="board-panel">
+            <div class="panel-header board-header">
+              <div>
+                <p id="pick-label" class="eyebrow">Pick 1 of 7</p>
+                <h2 id="team-label">Loading...</h2>
+              </div>
+              <span class="board-size">10 cards</span>
+            </div>
+            <div class="lifeline-row">
+              <div class="lifeline-head">
+                <span class="lifeline-title">Wild cards</span>
+                <div class="sheet-head-actions">
+                  <button id="help-btn" class="help-button" type="button" aria-label="How to play" title="How to play">?</button>
+                  <button class="sheet-close" type="button" data-close-sheet aria-label="Close">&times;</button>
+                </div>
+              </div>
+              <div id="lifelines" class="lifelines"></div>
+            </div>
+            <div id="board" class="board"></div>
+          </section>
+
+          <aside class="roster-panel">
+            <div class="panel-header compact">
+              <h2>Roster</h2>
+              <div class="sheet-head-actions">
+                <span id="score-chip" class="score-chip">Score hidden</span>
+                <button class="sheet-close" type="button" data-close-sheet aria-label="Close">&times;</button>
+              </div>
+            </div>
+            <div id="roster" class="roster"></div>
+            <div id="reveal" class="reveal hidden"></div>
+          </aside>
+        </section>
+
+        <footer class="credit">
+          Point Share data from
+          <a href="https://www.hockey-reference.com/" target="_blank" rel="noopener noreferrer">Hockey-Reference.com</a>.
+        </footer>
+      </section>
+      <div id="sheet-backdrop" class="sheet-backdrop"></div>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

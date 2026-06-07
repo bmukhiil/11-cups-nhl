@@ -1,0 +1,483 @@
+timestamp_utc,player_id,player_name,url,output_path,status,http_status,bytes,message
+2026-06-07T19:24:27.224Z,ekblaaa01,Aaron Ekblad,https://www.hockey-reference.com/req/202301051/images/headshots/ekblaaa01.jpg,data\hockey_reference_headshots\ekblaaa01.jpg,missing,404,,not found
+2026-06-07T19:24:37.470Z,deadmad01,Adam Deadmarsh,https://www.hockey-reference.com/req/202301051/images/headshots/deadmad01.jpg,data\hockey_reference_headshots\deadmad01.jpg,missing,404,,not found
+2026-06-07T19:28:07.915Z,fantiad01,Adam Fantilli,https://www.hockey-reference.com/req/202301051/images/headshots/fantiad01.jpg,data\hockey_reference_headshots\fantiad01.jpg,missing,404,,not found
+2026-06-07T19:28:18.017Z,footead01,Adam Foote,https://www.hockey-reference.com/req/202301051/images/headshots/footead01.jpg,data\hockey_reference_headshots\footead01.jpg,downloaded,200,8196,ok
+2026-06-07T19:28:28.241Z,foxad01,Adam Fox,https://www.hockey-reference.com/req/202301051/images/headshots/foxad01.jpg,data\hockey_reference_headshots\foxad01.jpg,missing,404,,not found
+2026-06-07T19:28:38.454Z,gravead01,Adam Graves,https://www.hockey-reference.com/req/202301051/images/headshots/gravead01.jpg,data\hockey_reference_headshots\gravead01.jpg,missing,404,,not found
+2026-06-07T19:28:48.660Z,henriad01,Adam Henrique,https://www.hockey-reference.com/req/202301051/images/headshots/henriad01.jpg,data\hockey_reference_headshots\henriad01.jpg,downloaded,200,2776,ok
+2026-06-07T19:28:58.876Z,larssad01,Adam Larsson,https://www.hockey-reference.com/req/202301051/images/headshots/larssad01.jpg,data\hockey_reference_headshots\larssad01.jpg,downloaded,200,2708,ok
+2026-06-07T19:29:09.111Z,lowryad01,Adam Lowry,https://www.hockey-reference.com/req/202301051/images/headshots/lowryad01.jpg,data\hockey_reference_headshots\lowryad01.jpg,missing,404,,not found
+2026-06-07T19:29:19.205Z,oatesad01,Adam Oates,https://www.hockey-reference.com/req/202301051/images/headshots/oatesad01.jpg,data\hockey_reference_headshots\oatesad01.jpg,downloaded,200,3250,ok
+2026-06-07T19:29:29.397Z,pelecad01,Adam Pelech,https://www.hockey-reference.com/req/202301051/images/headshots/pelecad01.jpg,data\hockey_reference_headshots\pelecad01.jpg,missing,404,,not found
+2026-06-07T19:29:39.616Z,hillad01,Adin Hill,https://www.hockey-reference.com/req/202301051/images/headshots/hillad01.jpg,data\hockey_reference_headshots\hillad01.jpg,missing,404,,not found
+2026-06-07T19:29:49.832Z,aucoiad01,Adrian Aucoin,https://www.hockey-reference.com/req/202301051/images/headshots/aucoiad01.jpg,data\hockey_reference_headshots\aucoiad01.jpg,missing,404,,not found
+2026-06-07T19:30:00.033Z,kempead01,Adrian Kempe,https://www.hockey-reference.com/req/202301051/images/headshots/kempead01.jpg,data\hockey_reference_headshots\kempead01.jpg,missing,404,,not found
+2026-06-07T19:30:10.251Z,iafraal01,Al Iafrate,https://www.hockey-reference.com/req/202301051/images/headshots/iafraal01.jpg,data\hockey_reference_headshots\iafraal01.jpg,missing,404,,not found
+2026-06-07T19:30:20.489Z,macadal01,Al MacAdam,https://www.hockey-reference.com/req/202301051/images/headshots/macadal01.jpg,data\hockey_reference_headshots\macadal01.jpg,missing,404,,not found
+2026-06-07T19:30:30.593Z,macinal01,Al MacInnis,https://www.hockey-reference.com/req/202301051/images/headshots/macinal01.jpg,data\hockey_reference_headshots\macinal01.jpg,downloaded,200,3409,ok
+2026-06-07T19:30:40.795Z,rollial01,Al Rollins,https://www.hockey-reference.com/req/202301051/images/headshots/rollial01.jpg,data\hockey_reference_headshots\rollial01.jpg,missing,404,,not found
+2026-06-07T19:30:51.004Z,secoral01,Al Secord,https://www.hockey-reference.com/req/202301051/images/headshots/secoral01.jpg,data\hockey_reference_headshots\secoral01.jpg,missing,404,,not found
+2026-06-07T19:31:01.230Z,chevral01,Alain Chevrier,https://www.hockey-reference.com/req/202301051/images/headshots/chevral01.jpg,data\hockey_reference_headshots\chevral01.jpg,missing,404,,not found
+2026-06-07T19:31:11.438Z,martial01,Alec Martinez,https://www.hockey-reference.com/req/202301051/images/headshots/martial01.jpg,data\hockey_reference_headshots\martial01.jpg,downloaded,200,2925,ok
+2026-06-07T19:31:21.644Z,barkoal01,Aleksander Barkov,https://www.hockey-reference.com/req/202301051/images/headshots/barkoal01.jpg,data\hockey_reference_headshots\barkoal01.jpg,downloaded,200,3034,ok
+2026-06-07T19:31:31.863Z,hemskal01,Aleš Hemský,https://www.hockey-reference.com/req/202301051/images/headshots/hemskal01.jpg,data\hockey_reference_headshots\hemskal01.jpg,downloaded,200,3427,ok
+2026-06-07T19:31:42.090Z,kotalal01,Aleš Kotalík,https://www.hockey-reference.com/req/202301051/images/headshots/kotalal01.jpg,data\hockey_reference_headshots\kotalal01.jpg,missing,404,,not found
+2026-06-07T19:31:52.298Z,auldal01,Alex Auld,https://www.hockey-reference.com/req/202301051/images/headshots/auldal01.jpg,data\hockey_reference_headshots\auldal01.jpg,missing,404,,not found
+2026-06-07T19:32:02.532Z,debrial01,Alex DeBrincat,https://www.hockey-reference.com/req/202301051/images/headshots/debrial01.jpg,data\hockey_reference_headshots\debrial01.jpg,missing,404,,not found
+2026-06-07T19:32:12.742Z,froloal01,Alex Frolov,https://www.hockey-reference.com/req/202301051/images/headshots/froloal01.jpg,data\hockey_reference_headshots\froloal01.jpg,missing,404,,not found
+2026-06-07T19:32:22.955Z,galchal01,Alex Galchenyuk,https://www.hockey-reference.com/req/202301051/images/headshots/galchal01.jpg,data\hockey_reference_headshots\galchal01.jpg,downloaded,200,2911,ok
+2026-06-07T19:32:33.168Z,goligal01,Alex Goligoski,https://www.hockey-reference.com/req/202301051/images/headshots/goligal01.jpg,data\hockey_reference_headshots\goligal01.jpg,downloaded,200,3146,ok
+2026-06-07T19:32:43.381Z,iafalal01,Alex Iafallo,https://www.hockey-reference.com/req/202301051/images/headshots/iafalal01.jpg,data\hockey_reference_headshots\iafalal01.jpg,missing,404,,not found
+2026-06-07T19:32:53.596Z,killoal01,Alex Killorn,https://www.hockey-reference.com/req/202301051/images/headshots/killoal01.jpg,data\hockey_reference_headshots\killoal01.jpg,downloaded,200,3211,ok
+2026-06-07T19:33:03.795Z,kovalal01,Alex Kovalev,https://www.hockey-reference.com/req/202301051/images/headshots/kovalal01.jpg,data\hockey_reference_headshots\kovalal01.jpg,missing,404,,not found
+2026-06-07T19:33:14.004Z,lyonal01,Alex Lyon,https://www.hockey-reference.com/req/202301051/images/headshots/lyonal01.jpg,data\hockey_reference_headshots\lyonal01.jpg,missing,404,,not found
+2026-06-07T19:33:24.205Z,nedelal01,Alex Nedeljkovic,https://www.hockey-reference.com/req/202301051/images/headshots/nedelal01.jpg,data\hockey_reference_headshots\nedelal01.jpg,missing,404,,not found
+2026-06-07T19:33:34.424Z,ovechal01,Alex Ovechkin,https://www.hockey-reference.com/req/202301051/images/headshots/ovechal01.jpg,data\hockey_reference_headshots\ovechal01.jpg,downloaded,200,3005,ok
+2026-06-07T19:33:44.654Z,pietral01,Alex Pietrangelo,https://www.hockey-reference.com/req/202301051/images/headshots/pietral01.jpg,data\hockey_reference_headshots\pietral01.jpg,downloaded,200,3389,ok
+2026-06-07T19:33:54.868Z,tangual01,Alex Tanguay,https://www.hockey-reference.com/req/202301051/images/headshots/tangual01.jpg,data\hockey_reference_headshots\tangual01.jpg,downloaded,200,3195,ok
+2026-06-07T19:34:05.083Z,tuchal01,Alex Tuch,https://www.hockey-reference.com/req/202301051/images/headshots/tuchal01.jpg,data\hockey_reference_headshots\tuchal01.jpg,missing,404,,not found
+2026-06-07T19:34:15.304Z,georgal01,Alexandar Georgiev,https://www.hockey-reference.com/req/202301051/images/headshots/georgal01.jpg,data\hockey_reference_headshots\georgal01.jpg,missing,404,,not found
+2026-06-07T19:34:25.516Z,edleral01,Alexander Edler,https://www.hockey-reference.com/req/202301051/images/headshots/edleral01.jpg,data\hockey_reference_headshots\edleral01.jpg,downloaded,200,3118,ok
+2026-06-07T19:34:35.650Z,mogilal01,Alexander Mogilny,https://www.hockey-reference.com/req/202301051/images/headshots/mogilal01.jpg,data\hockey_reference_headshots\mogilal01.jpg,downloaded,200,6871,ok
+2026-06-07T19:34:45.876Z,nikisal01,Alexander Nikishin,https://www.hockey-reference.com/req/202301051/images/headshots/nikisal01.jpg,data\hockey_reference_headshots\nikisal01.jpg,missing,404,,not found
+2026-06-07T19:34:56.090Z,radulal01,Alexander Radulov,https://www.hockey-reference.com/req/202301051/images/headshots/radulal01.jpg,data\hockey_reference_headshots\radulal01.jpg,missing,404,,not found
+2026-06-07T19:35:06.305Z,romanal01,Alexander Romanov,https://www.hockey-reference.com/req/202301051/images/headshots/romanal01.jpg,data\hockey_reference_headshots\romanal01.jpg,missing,404,,not found
+2026-06-07T19:35:16.519Z,selival01,Alexander Selivanov,https://www.hockey-reference.com/req/202301051/images/headshots/selival01.jpg,data\hockey_reference_headshots\selival01.jpg,missing,404,,not found
+2026-06-07T19:35:26.751Z,semakal01,Alexander Semak,https://www.hockey-reference.com/req/202301051/images/headshots/semakal01.jpg,data\hockey_reference_headshots\semakal01.jpg,missing,404,,not found
+2026-06-07T19:35:36.980Z,seminal01,Alexander Semin,https://www.hockey-reference.com/req/202301051/images/headshots/seminal01.jpg,data\hockey_reference_headshots\seminal01.jpg,downloaded,200,3056,ok
+2026-06-07T19:35:47.215Z,steenal01,Alexander Steen,https://www.hockey-reference.com/req/202301051/images/headshots/steenal01.jpg,data\hockey_reference_headshots\steenal01.jpg,downloaded,200,3360,ok
+2026-06-07T19:35:57.437Z,wennbal01,Alexander Wennberg,https://www.hockey-reference.com/req/202301051/images/headshots/wennbal01.jpg,data\hockey_reference_headshots\wennbal01.jpg,missing,404,,not found
+2026-06-07T19:36:07.666Z,burroal01,Alexandre Burrows,https://www.hockey-reference.com/req/202301051/images/headshots/burroal01.jpg,data\hockey_reference_headshots\burroal01.jpg,downloaded,200,3021,ok
+2026-06-07T19:36:17.893Z,carrial01,Alexandre Carrier,https://www.hockey-reference.com/req/202301051/images/headshots/carrial01.jpg,data\hockey_reference_headshots\carrial01.jpg,missing,404,,not found
+2026-06-07T19:36:28.102Z,daiglal02,Alexandre Daigle,https://www.hockey-reference.com/req/202301051/images/headshots/daiglal02.jpg,data\hockey_reference_headshots\daiglal02.jpg,missing,404,,not found
+2026-06-07T19:36:38.339Z,kasatal01,Alexei Kasatonov,https://www.hockey-reference.com/req/202301051/images/headshots/kasatal01.jpg,data\hockey_reference_headshots\kasatal01.jpg,missing,404,,not found
+2026-06-07T19:36:48.536Z,ponikal01,Alexei Ponikarovsky,https://www.hockey-reference.com/req/202301051/images/headshots/ponikal01.jpg,data\hockey_reference_headshots\ponikal01.jpg,missing,404,,not found
+2026-06-07T19:36:58.632Z,yashial01,Alexei Yashin,https://www.hockey-reference.com/req/202301051/images/headshots/yashial01.jpg,data\hockey_reference_headshots\yashial01.jpg,downloaded,200,5854,ok
+2026-06-07T19:37:08.844Z,zhamnal01,Alexei Zhamnov,https://www.hockey-reference.com/req/202301051/images/headshots/zhamnal01.jpg,data\hockey_reference_headshots\zhamnal01.jpg,missing,404,,not found
+2026-06-07T19:37:19.081Z,zhitnal01,Alexei Zhitnik,https://www.hockey-reference.com/req/202301051/images/headshots/zhitnal01.jpg,data\hockey_reference_headshots\zhitnal01.jpg,missing,404,,not found
+2026-06-07T19:37:29.307Z,lafreal01,Alexis Lafrenière,https://www.hockey-reference.com/req/202301051/images/headshots/lafreal01.jpg,data\hockey_reference_headshots\lafreal01.jpg,missing,404,,not found
+2026-06-07T19:37:39.537Z,protaal01,Aliaksei Protas,https://www.hockey-reference.com/req/202301051/images/headshots/protaal01.jpg,data\hockey_reference_headshots\protaal01.jpg,missing,404,,not found
+2026-06-07T19:37:49.753Z,besteal01,Allan Bester,https://www.hockey-reference.com/req/202301051/images/headshots/besteal01.jpg,data\hockey_reference_headshots\besteal01.jpg,missing,404,,not found
+2026-06-07T19:37:59.960Z,mccaual01,Alyn McCauley,https://www.hockey-reference.com/req/202301051/images/headshots/mccaual01.jpg,data\hockey_reference_headshots\mccaual01.jpg,missing,404,,not found
+2026-06-07T19:38:10.180Z,eriksan01,Anders Eriksson,https://www.hockey-reference.com/req/202301051/images/headshots/eriksan01.jpg,data\hockey_reference_headshots\eriksan01.jpg,missing,404,,not found
+2026-06-07T19:38:20.389Z,leean01,Anders Lee,https://www.hockey-reference.com/req/202301051/images/headshots/leean01.jpg,data\hockey_reference_headshots\leean01.jpg,downloaded,200,2975,ok
+2026-06-07T19:38:30.611Z,burakan01,André Burakovsky,https://www.hockey-reference.com/req/202301051/images/headshots/burakan01.jpg,data\hockey_reference_headshots\burakan01.jpg,missing,404,,not found
+2026-06-07T19:38:40.827Z,athanan01,Andreas Athanasiou,https://www.hockey-reference.com/req/202301051/images/headshots/athanan01.jpg,data\hockey_reference_headshots\athanan01.jpg,missing,404,,not found
+2026-06-07T19:38:51.039Z,kostian01,Andrei Kostitsyn,https://www.hockey-reference.com/req/202301051/images/headshots/kostian01.jpg,data\hockey_reference_headshots\kostian01.jpg,missing,404,,not found
+2026-06-07T19:39:01.289Z,kuzmean01,Andrei Kuzmenko,https://www.hockey-reference.com/req/202301051/images/headshots/kuzmean01.jpg,data\hockey_reference_headshots\kuzmean01.jpg,missing,404,,not found
+2026-06-07T19:39:11.481Z,markoan01,Andrei Markov,https://www.hockey-reference.com/req/202301051/images/headshots/markoan01.jpg,data\hockey_reference_headshots\markoan01.jpg,downloaded,200,2675,ok
+2026-06-07T19:39:21.702Z,svechan01,Andrei Svechnikov,https://www.hockey-reference.com/req/202301051/images/headshots/svechan01.jpg,data\hockey_reference_headshots\svechan01.jpg,missing,404,,not found
+2026-06-07T19:39:31.927Z,vasilan02,Andrei Vasilevskiy,https://www.hockey-reference.com/req/202301051/images/headshots/vasilan02.jpg,data\hockey_reference_headshots\vasilan02.jpg,missing,404,,not found
+2026-06-07T19:39:42.166Z,zyuzian01,Andrei Zyuzin,https://www.hockey-reference.com/req/202301051/images/headshots/zyuzian01.jpg,data\hockey_reference_headshots\zyuzian01.jpg,missing,404,,not found
+2026-06-07T19:39:52.393Z,meszaan01,Andrej Meszároš,https://www.hockey-reference.com/req/202301051/images/headshots/meszaan01.jpg,data\hockey_reference_headshots\meszaan01.jpg,downloaded,200,3182,ok
+2026-06-07T19:40:02.603Z,sekeran01,Andrej Sekera,https://www.hockey-reference.com/req/202301051/images/headshots/sekeran01.jpg,data\hockey_reference_headshots\sekeran01.jpg,downloaded,200,2833,ok
+2026-06-07T19:40:12.695Z,brunean01,Andrew Brunette,https://www.hockey-reference.com/req/202301051/images/headshots/brunean01.jpg,data\hockey_reference_headshots\brunean01.jpg,downloaded,200,6956,ok
+2026-06-07T19:40:22.906Z,cassean01,Andrew Cassels,https://www.hockey-reference.com/req/202301051/images/headshots/cassean01.jpg,data\hockey_reference_headshots\cassean01.jpg,missing,404,,not found
+2026-06-07T19:40:33.100Z,coglian01,Andrew Cogliano,https://www.hockey-reference.com/req/202301051/images/headshots/coglian01.jpg,data\hockey_reference_headshots\coglian01.jpg,downloaded,200,2863,ok
+2026-06-07T19:40:43.321Z,laddan01,Andrew Ladd,https://www.hockey-reference.com/req/202301051/images/headshots/laddan01.jpg,data\hockey_reference_headshots\laddan01.jpg,downloaded,200,3050,ok
+2026-06-07T19:40:53.545Z,mangian01,Andrew Mangiapane,https://www.hockey-reference.com/req/202301051/images/headshots/mangian01.jpg,data\hockey_reference_headshots\mangian01.jpg,missing,404,,not found
+2026-06-07T19:41:03.772Z,raycran01,Andrew Raycroft,https://www.hockey-reference.com/req/202301051/images/headshots/raycran01.jpg,data\hockey_reference_headshots\raycran01.jpg,missing,404,,not found
+2026-06-07T19:41:13.969Z,delmoan01,Andy Delmore,https://www.hockey-reference.com/req/202301051/images/headshots/delmoan01.jpg,data\hockey_reference_headshots\delmoan01.jpg,missing,404,,not found
+2026-06-07T19:41:24.183Z,greenan01,Andy Greene,https://www.hockey-reference.com/req/202301051/images/headshots/greenan01.jpg,data\hockey_reference_headshots\greenan01.jpg,downloaded,200,2750,ok
+2026-06-07T19:41:34.405Z,mcdonan01,Andy McDonald,https://www.hockey-reference.com/req/202301051/images/headshots/mcdonan01.jpg,data\hockey_reference_headshots\mcdonan01.jpg,missing,404,,not found
+2026-06-07T19:41:44.626Z,moogan01,Andy Moog,https://www.hockey-reference.com/req/202301051/images/headshots/moogan01.jpg,data\hockey_reference_headshots\moogan01.jpg,missing,404,,not found
+2026-06-07T19:41:54.823Z,suttoan01,Andy Sutton,https://www.hockey-reference.com/req/202301051/images/headshots/suttoan01.jpg,data\hockey_reference_headshots\suttoan01.jpg,missing,404,,not found
+2026-06-07T19:42:05.065Z,cartean01,Anson Carter,https://www.hockey-reference.com/req/202301051/images/headshots/cartean01.jpg,data\hockey_reference_headshots\cartean01.jpg,missing,404,,not found
+2026-06-07T19:42:15.255Z,niittan01,Antero Niittymäki,https://www.hockey-reference.com/req/202301051/images/headshots/niittan01.jpg,data\hockey_reference_headshots\niittan01.jpg,missing,404,,not found
+2026-06-07T19:42:25.482Z,cirelan01,Anthony Cirelli,https://www.hockey-reference.com/req/202301051/images/headshots/cirelan01.jpg,data\hockey_reference_headshots\cirelan01.jpg,missing,404,,not found
+2026-06-07T19:42:35.683Z,duclaan01,Anthony Duclair,https://www.hockey-reference.com/req/202301051/images/headshots/duclaan01.jpg,data\hockey_reference_headshots\duclaan01.jpg,missing,404,,not found
+2026-06-07T19:42:45.896Z,manthan01,Anthony Mantha,https://www.hockey-reference.com/req/202301051/images/headshots/manthan01.jpg,data\hockey_reference_headshots\manthan01.jpg,missing,404,,not found
+2026-06-07T19:42:56.096Z,vermean01,Antoine Vermette,https://www.hockey-reference.com/req/202301051/images/headshots/vermean01.jpg,data\hockey_reference_headshots\vermean01.jpg,downloaded,200,2937,ok
+2026-06-07T19:43:06.291Z,babchan01,Anton Babchuk,https://www.hockey-reference.com/req/202301051/images/headshots/babchan01.jpg,data\hockey_reference_headshots\babchan01.jpg,missing,404,,not found
+2026-06-07T19:43:16.506Z,forsban01,Anton Forsberg,https://www.hockey-reference.com/req/202301051/images/headshots/forsban01.jpg,data\hockey_reference_headshots\forsban01.jpg,missing,404,,not found
+2026-06-07T19:43:26.730Z,khudoan01,Anton Khudobin,https://www.hockey-reference.com/req/202301051/images/headshots/khudoan01.jpg,data\hockey_reference_headshots\khudoan01.jpg,downloaded,200,3140,ok
+2026-06-07T19:43:36.929Z,lundean01,Anton Lundell,https://www.hockey-reference.com/req/202301051/images/headshots/lundean01.jpg,data\hockey_reference_headshots\lundean01.jpg,missing,404,,not found
+2026-06-07T19:43:47.151Z,stralan01,Anton Strålman,https://www.hockey-reference.com/req/202301051/images/headshots/stralan01.jpg,data\hockey_reference_headshots\stralan01.jpg,downloaded,200,3267,ok
+2026-06-07T19:43:57.386Z,miettan01,Antti Miettinen,https://www.hockey-reference.com/req/202301051/images/headshots/miettan01.jpg,data\hockey_reference_headshots\miettan01.jpg,missing,404,,not found
+2026-06-07T19:44:07.629Z,niemian02,Antti Niemi,https://www.hockey-reference.com/req/202301051/images/headshots/niemian02.jpg,data\hockey_reference_headshots\niemian02.jpg,downloaded,200,2905,ok
+2026-06-07T19:44:17.866Z,raantan01,Antti Raanta,https://www.hockey-reference.com/req/202301051/images/headshots/raantan01.jpg,data\hockey_reference_headshots\raantan01.jpg,downloaded,200,3187,ok
+2026-06-07T19:44:28.061Z,kopitan01,Anže Kopitar,https://www.hockey-reference.com/req/202301051/images/headshots/kopitan01.jpg,data\hockey_reference_headshots\kopitan01.jpg,downloaded,200,3080,ok
+2026-06-07T19:44:38.262Z,anisiar01,Artem Anisimov,https://www.hockey-reference.com/req/202301051/images/headshots/anisiar01.jpg,data\hockey_reference_headshots\anisiar01.jpg,downloaded,200,3408,ok
+2026-06-07T19:44:48.498Z,zubar01,Artem Zub,https://www.hockey-reference.com/req/202301051/images/headshots/zubar01.jpg,data\hockey_reference_headshots\zubar01.jpg,missing,404,,not found
+2026-06-07T19:44:58.720Z,panarar01,Artemi Panarin,https://www.hockey-reference.com/req/202301051/images/headshots/panarar01.jpg,data\hockey_reference_headshots\panarar01.jpg,missing,404,,not found
+2026-06-07T19:45:08.931Z,lehkoar01,Artturi Lehkonen,https://www.hockey-reference.com/req/202301051/images/headshots/lehkoar01.jpg,data\hockey_reference_headshots\lehkoar01.jpg,missing,404,,not found
+2026-06-07T19:45:19.079Z,irbear01,Artūrs Irbe,https://www.hockey-reference.com/req/202301051/images/headshots/irbear01.jpg,data\hockey_reference_headshots\irbear01.jpg,downloaded,200,4267,ok
+2026-06-07T19:45:29.289Z,matthau01,Auston Matthews,https://www.hockey-reference.com/req/202301051/images/headshots/matthau01.jpg,data\hockey_reference_headshots\matthau01.jpg,missing,404,,not found
+2026-06-07T19:45:39.510Z,jackmba01,Barret Jackman,https://www.hockey-reference.com/req/202301051/images/headshots/jackmba01.jpg,data\hockey_reference_headshots\jackmba01.jpg,downloaded,200,3436,ok
+2026-06-07T19:45:49.717Z,haytoba01,Barrett Hayton,https://www.hockey-reference.com/req/202301051/images/headshots/haytoba01.jpg,data\hockey_reference_headshots\haytoba01.jpg,missing,404,,not found
+2026-06-07T19:45:59.941Z,pederba01,Barry Pederson,https://www.hockey-reference.com/req/202301051/images/headshots/pederba01.jpg,data\hockey_reference_headshots\pederba01.jpg,missing,404,,not found
+2026-06-07T19:46:10.177Z,sennebe01,Beckett Sennecke,https://www.hockey-reference.com/req/202301051/images/headshots/sennebe01.jpg,data\hockey_reference_headshots\sennebe01.jpg,missing,404,,not found
+2026-06-07T19:46:20.394Z,wilsobe02,Behn Wilson,https://www.hockey-reference.com/req/202301051/images/headshots/wilsobe02.jpg,data\hockey_reference_headshots\wilsobe02.jpg,missing,404,,not found
+2026-06-07T19:46:30.585Z,bishobe01,Ben Bishop,https://www.hockey-reference.com/req/202301051/images/headshots/bishobe01.jpg,data\hockey_reference_headshots\bishobe01.jpg,downloaded,200,3161,ok
+2026-06-07T19:46:40.790Z,chiarbe01,Ben Chiarot,https://www.hockey-reference.com/req/202301051/images/headshots/chiarbe01.jpg,data\hockey_reference_headshots\chiarbe01.jpg,downloaded,200,2874,ok
+2026-06-07T19:46:51.006Z,lovejbe01,Ben Lovejoy,https://www.hockey-reference.com/req/202301051/images/headshots/lovejbe01.jpg,data\hockey_reference_headshots\lovejbe01.jpg,downloaded,200,2846,ok
+2026-06-07T19:47:01.205Z,cattobe01,Berkly Catton,https://www.hockey-reference.com/req/202301051/images/headshots/cattobe01.jpg,data\hockey_reference_headshots\cattobe01.jpg,missing,404,,not found
+2026-06-07T19:47:11.331Z,nichobe01,Bernie Nicholls,https://www.hockey-reference.com/req/202301051/images/headshots/nichobe01.jpg,data\hockey_reference_headshots\nichobe01.jpg,downloaded,200,4626,ok
+2026-06-07T19:47:21.480Z,parenbe01,Bernie Parent,https://www.hockey-reference.com/req/202301051/images/headshots/parenbe01.jpg,data\hockey_reference_headshots\parenbe01.jpg,downloaded,200,3849,ok
+2026-06-07T19:47:31.590Z,barbebi01,Bill Barber,https://www.hockey-reference.com/req/202301051/images/headshots/barbebi01.jpg,data\hockey_reference_headshots\barbebi01.jpg,downloaded,200,3319,ok
+2026-06-07T19:47:41.800Z,durnabi01,Bill Durnan,https://www.hockey-reference.com/req/202301051/images/headshots/durnabi01.jpg,data\hockey_reference_headshots\durnabi01.jpg,downloaded,200,3401,ok
+2026-06-07T19:47:52.023Z,gueribi01,Bill Guerin,https://www.hockey-reference.com/req/202301051/images/headshots/gueribi01.jpg,data\hockey_reference_headshots\gueribi01.jpg,missing,404,,not found
+2026-06-07T19:48:02.253Z,houldbi01,Bill Houlder,https://www.hockey-reference.com/req/202301051/images/headshots/houldbi01.jpg,data\hockey_reference_headshots\houldbi01.jpg,missing,404,,not found
+2026-06-07T19:48:12.383Z,ranfobi01,Bill Ranford,https://www.hockey-reference.com/req/202301051/images/headshots/ranfobi01.jpg,data\hockey_reference_headshots\ranfobi01.jpg,downloaded,200,4332,ok
+2026-06-07T19:48:22.503Z,smithbi01,Billy Smith,https://www.hockey-reference.com/req/202301051/images/headshots/smithbi01.jpg,data\hockey_reference_headshots\smithbi01.jpg,downloaded,200,3129,ok
+2026-06-07T19:48:32.854Z,stougbl01,Blaine Stoughton,https://www.hockey-reference.com/req/202301051/images/headshots/stougbl01.jpg,data\hockey_reference_headshots\stougbl01.jpg,missing,404,,not found
+2026-06-07T19:48:43.077Z,macdobl01,Blair MacDonald,https://www.hockey-reference.com/req/202301051/images/headshots/macdobl01.jpg,data\hockey_reference_headshots\macdobl01.jpg,missing,404,,not found
+2026-06-07T19:48:53.285Z,colembl01,Blake Coleman,https://www.hockey-reference.com/req/202301051/images/headshots/colembl01.jpg,data\hockey_reference_headshots\colembl01.jpg,missing,404,,not found
+2026-06-07T19:49:03.516Z,wheelbl01,Blake Wheeler,https://www.hockey-reference.com/req/202301051/images/headshots/wheelbl01.jpg,data\hockey_reference_headshots\wheelbl01.jpg,downloaded,200,2772,ok
+2026-06-07T19:49:13.737Z,horvabo01,Bo Horvat,https://www.hockey-reference.com/req/202301051/images/headshots/horvabo01.jpg,data\hockey_reference_headshots\horvabo01.jpg,missing,404,,not found
+2026-06-07T19:49:24.043Z,essenbo01,Bob Essensa,https://www.hockey-reference.com/req/202301051/images/headshots/essenbo01.jpg,data\hockey_reference_headshots\essenbo01.jpg,downloaded,200,4102,ok
+2026-06-07T19:49:34.266Z,froesbo01,Bob Froese,https://www.hockey-reference.com/req/202301051/images/headshots/froesbo01.jpg,data\hockey_reference_headshots\froesbo01.jpg,missing,404,,not found
+2026-06-07T19:49:44.471Z,sauvebo01,Bob Sauvé,https://www.hockey-reference.com/req/202301051/images/headshots/sauvebo01.jpg,data\hockey_reference_headshots\sauvebo01.jpg,missing,404,,not found
+2026-06-07T19:49:54.681Z,carpebo01,Bobby Carpenter,https://www.hockey-reference.com/req/202301051/images/headshots/carpebo01.jpg,data\hockey_reference_headshots\carpebo01.jpg,missing,404,,not found
+2026-06-07T19:50:04.779Z,clarkbo01,Bobby Clarke,https://www.hockey-reference.com/req/202301051/images/headshots/clarkbo01.jpg,data\hockey_reference_headshots\clarkbo01.jpg,downloaded,200,3593,ok
+2026-06-07T19:50:14.999Z,dollabo01,Bobby Dollas,https://www.hockey-reference.com/req/202301051/images/headshots/dollabo01.jpg,data\hockey_reference_headshots\dollabo01.jpg,missing,404,,not found
+2026-06-07T19:50:25.107Z,holikbo01,Bobby Holík,https://www.hockey-reference.com/req/202301051/images/headshots/holikbo01.jpg,data\hockey_reference_headshots\holikbo01.jpg,downloaded,200,5676,ok
+2026-06-07T19:50:35.225Z,hullbo01,Bobby Hull,https://www.hockey-reference.com/req/202301051/images/headshots/hullbo01.jpg,data\hockey_reference_headshots\hullbo01.jpg,downloaded,200,4145,ok
+2026-06-07T19:50:45.328Z,orrbo01,Bobby Orr,https://www.hockey-reference.com/req/202301051/images/headshots/orrbo01.jpg,data\hockey_reference_headshots\orrbo01.jpg,downloaded,200,3697,ok
+2026-06-07T19:50:55.550Z,ryanbo01,Bobby Ryan,https://www.hockey-reference.com/req/202301051/images/headshots/ryanbo01.jpg,data\hockey_reference_headshots\ryanbo01.jpg,downloaded,200,3280,ok
+2026-06-07T19:51:05.769Z,jennebo01,Boone Jenner,https://www.hockey-reference.com/req/202301051/images/headshots/jennebo01.jpg,data\hockey_reference_headshots\jennebo01.jpg,downloaded,200,3435,ok
+2026-06-07T19:51:15.998Z,mironbo01,Boris Mironov,https://www.hockey-reference.com/req/202301051/images/headshots/mironbo01.jpg,data\hockey_reference_headshots\mironbo01.jpg,missing,404,,not found
+2026-06-07T19:51:26.144Z,salmibo01,Börje Salming,https://www.hockey-reference.com/req/202301051/images/headshots/salmibo01.jpg,data\hockey_reference_headshots\salmibo01.jpg,downloaded,200,3037,ok
+2026-06-07T19:51:36.364Z,byrambo01,Bowen Byram,https://www.hockey-reference.com/req/202301051/images/headshots/byrambo01.jpg,data\hockey_reference_headshots\byrambo01.jpg,missing,404,,not found
+2026-06-07T19:51:46.553Z,boyesbr01,Brad Boyes,https://www.hockey-reference.com/req/202301051/images/headshots/boyesbr01.jpg,data\hockey_reference_headshots\boyesbr01.jpg,downloaded,200,3352,ok
+2026-06-07T19:51:56.771Z,lukowbr01,Brad Lukowich,https://www.hockey-reference.com/req/202301051/images/headshots/lukowbr01.jpg,data\hockey_reference_headshots\lukowbr01.jpg,missing,404,,not found
+2026-06-07T19:52:06.998Z,marchbr03,Brad Marchand,https://www.hockey-reference.com/req/202301051/images/headshots/marchbr03.jpg,data\hockey_reference_headshots\marchbr03.jpg,downloaded,200,3506,ok
+2026-06-07T19:52:17.227Z,mccribr01,Brad McCrimmon,https://www.hockey-reference.com/req/202301051/images/headshots/mccribr01.jpg,data\hockey_reference_headshots\mccribr01.jpg,missing,404,,not found
+2026-06-07T19:52:27.352Z,parkbr01,Brad Park,https://www.hockey-reference.com/req/202301051/images/headshots/parkbr01.jpg,data\hockey_reference_headshots\parkbr01.jpg,downloaded,200,3254,ok
+2026-06-07T19:52:37.467Z,richabr01,Brad Richards,https://www.hockey-reference.com/req/202301051/images/headshots/richabr01.jpg,data\hockey_reference_headshots\richabr01.jpg,downloaded,200,7587,ok
+2026-06-07T19:52:47.693Z,stuarbr02,Brad Stuart,https://www.hockey-reference.com/req/202301051/images/headshots/stuarbr02.jpg,data\hockey_reference_headshots\stuarbr02.jpg,downloaded,200,3045,ok
+2026-06-07T19:52:57.914Z,holtbbr01,Braden Holtby,https://www.hockey-reference.com/req/202301051/images/headshots/holtbbr01.jpg,data\hockey_reference_headshots\holtbbr01.jpg,downloaded,200,3184,ok
+2026-06-07T19:53:08.133Z,skjeibr01,Brady Skjei,https://www.hockey-reference.com/req/202301051/images/headshots/skjeibr01.jpg,data\hockey_reference_headshots\skjeibr01.jpg,missing,404,,not found
+2026-06-07T19:53:18.349Z,tkachbr01,Brady Tkachuk,https://www.hockey-reference.com/req/202301051/images/headshots/tkachbr01.jpg,data\hockey_reference_headshots\tkachbr01.jpg,missing,404,,not found
+2026-06-07T19:53:28.567Z,carlobr01,Brandon Carlo,https://www.hockey-reference.com/req/202301051/images/headshots/carlobr01.jpg,data\hockey_reference_headshots\carlobr01.jpg,missing,404,,not found
+2026-06-07T19:53:38.790Z,dubinbr01,Brandon Dubinsky,https://www.hockey-reference.com/req/202301051/images/headshots/dubinbr01.jpg,data\hockey_reference_headshots\dubinbr01.jpg,downloaded,200,3490,ok
+2026-06-07T19:53:49.014Z,hagelbr01,Brandon Hagel,https://www.hockey-reference.com/req/202301051/images/headshots/hagelbr01.jpg,data\hockey_reference_headshots\hagelbr01.jpg,missing,404,,not found
+2026-06-07T19:53:59.214Z,montobr01,Brandon Montour,https://www.hockey-reference.com/req/202301051/images/headshots/montobr01.jpg,data\hockey_reference_headshots\montobr01.jpg,missing,404,,not found
+2026-06-07T19:54:09.437Z,saadbr01,Brandon Saad,https://www.hockey-reference.com/req/202301051/images/headshots/saadbr01.jpg,data\hockey_reference_headshots\saadbr01.jpg,downloaded,200,3116,ok
+2026-06-07T19:54:19.656Z,tanevbr01,Brandon Tanev,https://www.hockey-reference.com/req/202301051/images/headshots/tanevbr01.jpg,data\hockey_reference_headshots\tanevbr01.jpg,missing,404,,not found
+2026-06-07T19:54:29.879Z,clarkbr02,Brandt Clarke,https://www.hockey-reference.com/req/202301051/images/headshots/clarkbr02.jpg,data\hockey_reference_headshots\clarkbr02.jpg,missing,404,,not found
+2026-06-07T19:54:40.101Z,mcnabbr01,Brayden McNabb,https://www.hockey-reference.com/req/202301051/images/headshots/mcnabbr01.jpg,data\hockey_reference_headshots\mcnabbr01.jpg,downloaded,200,2890,ok
+2026-06-07T19:54:50.300Z,pointbr01,Brayden Point,https://www.hockey-reference.com/req/202301051/images/headshots/pointbr01.jpg,data\hockey_reference_headshots\pointbr01.jpg,missing,404,,not found
+2026-06-07T19:55:00.517Z,schenbr01,Brayden Schenn,https://www.hockey-reference.com/req/202301051/images/headshots/schenbr01.jpg,data\hockey_reference_headshots\schenbr01.jpg,downloaded,200,3274,ok
+2026-06-07T19:55:10.724Z,coburbr01,Braydon Coburn,https://www.hockey-reference.com/req/202301051/images/headshots/coburbr01.jpg,data\hockey_reference_headshots\coburbr01.jpg,downloaded,200,3484,ok
+2026-06-07T19:55:20.938Z,gallabr01,Brendan Gallagher,https://www.hockey-reference.com/req/202301051/images/headshots/gallabr01.jpg,data\hockey_reference_headshots\gallabr01.jpg,downloaded,200,3049,ok
+2026-06-07T19:55:31.170Z,morribr01,Brendan Morrison,https://www.hockey-reference.com/req/202301051/images/headshots/morribr01.jpg,data\hockey_reference_headshots\morribr01.jpg,missing,404,,not found
+2026-06-07T19:55:41.261Z,shanabr01,Brendan Shanahan,https://www.hockey-reference.com/req/202301051/images/headshots/shanabr01.jpg,data\hockey_reference_headshots\shanabr01.jpg,downloaded,200,3434,ok
+2026-06-07T19:55:51.518Z,dillobr01,Brenden Dillon,https://www.hockey-reference.com/req/202301051/images/headshots/dillobr01.jpg,data\hockey_reference_headshots\dillobr01.jpg,downloaded,200,3220,ok
+2026-06-07T19:56:01.735Z,morrobr01,Brenden Morrow,https://www.hockey-reference.com/req/202301051/images/headshots/morrobr01.jpg,data\hockey_reference_headshots\morrobr01.jpg,downloaded,200,1662,ok
+2026-06-07T19:56:11.956Z,burnsbr01,Brent Burns,https://www.hockey-reference.com/req/202301051/images/headshots/burnsbr01.jpg,data\hockey_reference_headshots\burnsbr01.jpg,downloaded,200,3012,ok
+2026-06-07T19:56:22.203Z,johnsbr02,Brent Johnson,https://www.hockey-reference.com/req/202301051/images/headshots/johnsbr02.jpg,data\hockey_reference_headshots\johnsbr02.jpg,missing,404,,not found
+2026-06-07T19:56:32.442Z,seabrbr01,Brent Seabrook,https://www.hockey-reference.com/req/202301051/images/headshots/seabrbr01.jpg,data\hockey_reference_headshots\seabrbr01.jpg,downloaded,200,3353,ok
+2026-06-07T19:56:42.662Z,sopelbr01,Brent Sopel,https://www.hockey-reference.com/req/202301051/images/headshots/sopelbr01.jpg,data\hockey_reference_headshots\sopelbr01.jpg,missing,404,,not found
+2026-06-07T19:56:52.768Z,suttebr02,Brent Sutter,https://www.hockey-reference.com/req/202301051/images/headshots/suttebr02.jpg,data\hockey_reference_headshots\suttebr02.jpg,downloaded,200,4553,ok
+2026-06-07T19:57:03.003Z,clarkbr01,Brett Clark,https://www.hockey-reference.com/req/202301051/images/headshots/clarkbr01.jpg,data\hockey_reference_headshots\clarkbr01.jpg,missing,404,,not found
+2026-06-07T19:57:13.220Z,connobr01,Brett Connolly,https://www.hockey-reference.com/req/202301051/images/headshots/connobr01.jpg,data\hockey_reference_headshots\connobr01.jpg,downloaded,200,3274,ok
+2026-06-07T19:57:23.444Z,howdebr01,Brett Howden,https://www.hockey-reference.com/req/202301051/images/headshots/howdebr01.jpg,data\hockey_reference_headshots\howdebr01.jpg,missing,404,,not found
+2026-06-07T19:57:33.535Z,hullbr01,Brett Hull,https://www.hockey-reference.com/req/202301051/images/headshots/hullbr01.jpg,data\hockey_reference_headshots\hullbr01.jpg,downloaded,200,3017,ok
+2026-06-07T19:57:43.746Z,pescebr01,Brett Pesce,https://www.hockey-reference.com/req/202301051/images/headshots/pescebr01.jpg,data\hockey_reference_headshots\pescebr01.jpg,missing,404,,not found
+2026-06-07T19:57:53.946Z,bellobr01,Brian Bellows,https://www.hockey-reference.com/req/202301051/images/headshots/bellobr01.jpg,data\hockey_reference_headshots\bellobr01.jpg,missing,404,,not found
+2026-06-07T19:58:04.171Z,bouchbr01,Brian Boucher,https://www.hockey-reference.com/req/202301051/images/headshots/bouchbr01.jpg,data\hockey_reference_headshots\bouchbr01.jpg,missing,404,,not found
+2026-06-07T19:58:14.394Z,bradlbr01,Brian Bradley,https://www.hockey-reference.com/req/202301051/images/headshots/bradlbr01.jpg,data\hockey_reference_headshots\bradlbr01.jpg,missing,404,,not found
+2026-06-07T19:58:24.598Z,campbbr02,Brian Campbell,https://www.hockey-reference.com/req/202301051/images/headshots/campbbr02.jpg,data\hockey_reference_headshots\campbbr02.jpg,downloaded,200,3419,ok
+2026-06-07T19:58:34.836Z,dumoubr01,Brian Dumoulin,https://www.hockey-reference.com/req/202301051/images/headshots/dumoubr01.jpg,data\hockey_reference_headshots\dumoubr01.jpg,downloaded,200,2800,ok
+2026-06-07T19:58:45.066Z,elliobr01,Brian Elliott,https://www.hockey-reference.com/req/202301051/images/headshots/elliobr01.jpg,data\hockey_reference_headshots\elliobr01.jpg,downloaded,200,3410,ok
+2026-06-07T19:58:55.277Z,giontbr01,Brian Gionta,https://www.hockey-reference.com/req/202301051/images/headshots/giontbr01.jpg,data\hockey_reference_headshots\giontbr01.jpg,downloaded,200,2975,ok
+2026-06-07T19:59:05.503Z,haywabr01,Brian Hayward,https://www.hockey-reference.com/req/202301051/images/headshots/haywabr01.jpg,data\hockey_reference_headshots\haywabr01.jpg,missing,404,,not found
+2026-06-07T19:59:15.656Z,leetcbr01,Brian Leetch,https://www.hockey-reference.com/req/202301051/images/headshots/leetcbr01.jpg,data\hockey_reference_headshots\leetcbr01.jpg,downloaded,200,3091,ok
+2026-06-07T19:59:25.875Z,pothibr01,Brian Pothier,https://www.hockey-reference.com/req/202301051/images/headshots/pothibr01.jpg,data\hockey_reference_headshots\pothibr01.jpg,missing,404,,not found
+2026-06-07T19:59:35.995Z,rafalbr01,Brian Rafalski,https://www.hockey-reference.com/req/202301051/images/headshots/rafalbr01.jpg,data\hockey_reference_headshots\rafalbr01.jpg,downloaded,200,6986,ok
+2026-06-07T19:59:46.237Z,rolstbr01,Brian Rolston,https://www.hockey-reference.com/req/202301051/images/headshots/rolstbr01.jpg,data\hockey_reference_headshots\rolstbr01.jpg,missing,404,,not found
+2026-06-07T19:59:56.498Z,boesebr01,Brock Boeser,https://www.hockey-reference.com/req/202301051/images/headshots/boesebr01.jpg,data\hockey_reference_headshots\boesebr01.jpg,missing,404,,not found
+2026-06-07T20:00:06.719Z,faberbr01,Brock Faber,https://www.hockey-reference.com/req/202301051/images/headshots/faberbr01.jpg,data\hockey_reference_headshots\faberbr01.jpg,missing,404,,not found
+2026-06-07T20:00:16.965Z,nelsobr01,Brock Nelson,https://www.hockey-reference.com/req/202301051/images/headshots/nelsobr01.jpg,data\hockey_reference_headshots\nelsobr01.jpg,downloaded,200,3087,ok
+2026-06-07T20:00:27.185Z,laichbr01,Brooks Laich,https://www.hockey-reference.com/req/202301051/images/headshots/laichbr01.jpg,data\hockey_reference_headshots\laichbr01.jpg,downloaded,200,3045,ok
+2026-06-07T20:00:37.405Z,orpikbr01,Brooks Orpik,https://www.hockey-reference.com/req/202301051/images/headshots/orpikbr01.jpg,data\hockey_reference_headshots\orpikbr01.jpg,downloaded,200,2962,ok
+2026-06-07T20:00:47.506Z,drivebr01,Bruce Driver,https://www.hockey-reference.com/req/202301051/images/headshots/drivebr01.jpg,data\hockey_reference_headshots\drivebr01.jpg,downloaded,200,4578,ok
+2026-06-07T20:00:57.703Z,littlbr01,Bryan Little,https://www.hockey-reference.com/req/202301051/images/headshots/littlbr01.jpg,data\hockey_reference_headshots\littlbr01.jpg,downloaded,200,2958,ok
+2026-06-07T20:01:07.911Z,marchbr02,Bryan Marchment,https://www.hockey-reference.com/req/202301051/images/headshots/marchbr02.jpg,data\hockey_reference_headshots\marchbr02.jpg,missing,404,,not found
+2026-06-07T20:01:18.124Z,mccabbr01,Bryan McCabe,https://www.hockey-reference.com/req/202301051/images/headshots/mccabbr01.jpg,data\hockey_reference_headshots\mccabbr01.jpg,missing,404,,not found
+2026-06-07T20:01:28.336Z,rustbr01,Bryan Rust,https://www.hockey-reference.com/req/202301051/images/headshots/rustbr01.jpg,data\hockey_reference_headshots\rustbr01.jpg,missing,404,,not found
+2026-06-07T20:01:38.554Z,smolibr01,Bryan Smolinski,https://www.hockey-reference.com/req/202301051/images/headshots/smolibr01.jpg,data\hockey_reference_headshots\smolibr01.jpg,missing,404,,not found
+2026-06-07T20:01:48.651Z,trottbr01,Bryan Trottier,https://www.hockey-reference.com/req/202301051/images/headshots/trottbr01.jpg,data\hockey_reference_headshots\trottbr01.jpg,downloaded,200,2862,ok
+2026-06-07T20:01:58.857Z,salvabr01,Bryce Salvador,https://www.hockey-reference.com/req/202301051/images/headshots/salvabr01.jpg,data\hockey_reference_headshots\salvabr01.jpg,downloaded,200,2945,ok
+2026-06-07T20:02:09.070Z,dafoeby01,Byron Dafoe,https://www.hockey-reference.com/req/202301051/images/headshots/dafoeby01.jpg,data\hockey_reference_headshots\dafoeby01.jpg,missing,404,,not found
+2026-06-07T20:02:19.286Z,makarca01,Cale Makar,https://www.hockey-reference.com/req/202301051/images/headshots/makarca01.jpg,data\hockey_reference_headshots\makarca01.jpg,missing,404,,not found
+2026-06-07T20:02:29.517Z,jarnkca01,Calle Järnkrok,https://www.hockey-reference.com/req/202301051/images/headshots/jarnkca01.jpg,data\hockey_reference_headshots\jarnkca01.jpg,missing,404,,not found
+2026-06-07T20:02:39.607Z,johanca01,Calle Johansson,https://www.hockey-reference.com/req/202301051/images/headshots/johanca01.jpg,data\hockey_reference_headshots\johanca01.jpg,downloaded,200,6080,ok
+2026-06-07T20:02:49.838Z,pickaca01,Calvin Pickard,https://www.hockey-reference.com/req/202301051/images/headshots/pickaca01.jpg,data\hockey_reference_headshots\pickaca01.jpg,missing,404,,not found
+2026-06-07T20:03:00.071Z,atkinca01,Cam Atkinson,https://www.hockey-reference.com/req/202301051/images/headshots/atkinca01.jpg,data\hockey_reference_headshots\atkinca01.jpg,downloaded,200,3456,ok
+2026-06-07T20:03:10.281Z,fowleca01,Cam Fowler,https://www.hockey-reference.com/req/202301051/images/headshots/fowleca01.jpg,data\hockey_reference_headshots\fowleca01.jpg,downloaded,200,2878,ok
+2026-06-07T20:03:20.385Z,neelyca01,Cam Neely,https://www.hockey-reference.com/req/202301051/images/headshots/neelyca01.jpg,data\hockey_reference_headshots\neelyca01.jpg,downloaded,200,3839,ok
+2026-06-07T20:03:30.589Z,talboca01,Cam Talbot,https://www.hockey-reference.com/req/202301051/images/headshots/talboca01.jpg,data\hockey_reference_headshots\talboca01.jpg,missing,404,,not found
+2026-06-07T20:03:40.800Z,wardca01,Cam Ward,https://www.hockey-reference.com/req/202301051/images/headshots/wardca01.jpg,data\hockey_reference_headshots\wardca01.jpg,downloaded,200,3142,ok
+2026-06-07T20:03:51.010Z,priceca01,Carey Price,https://www.hockey-reference.com/req/202301051/images/headshots/priceca01.jpg,data\hockey_reference_headshots\priceca01.jpg,downloaded,200,3078,ok
+2026-06-07T20:04:01.111Z,colaica01,Carlo Colaiacovo,https://www.hockey-reference.com/req/202301051/images/headshots/colaica01.jpg,data\hockey_reference_headshots\colaica01.jpg,downloaded,200,3111,ok
+2026-06-07T20:04:11.354Z,soucyca01,Carson Soucy,https://www.hockey-reference.com/req/202301051/images/headshots/soucyca01.jpg,data\hockey_reference_headshots\soucyca01.jpg,missing,404,,not found
+2026-06-07T20:04:21.563Z,hartca01,Carter Hart,https://www.hockey-reference.com/req/202301051/images/headshots/hartca01.jpg,data\hockey_reference_headshots\hartca01.jpg,missing,404,,not found
+2026-06-07T20:04:31.763Z,huttoca01,Carter Hutton,https://www.hockey-reference.com/req/202301051/images/headshots/huttoca01.jpg,data\hockey_reference_headshots\huttoca01.jpg,downloaded,200,3031,ok
+2026-06-07T20:04:41.969Z,verhaca01,Carter Verhaeghe,https://www.hockey-reference.com/req/202301051/images/headshots/verhaca01.jpg,data\hockey_reference_headshots\verhaca01.jpg,missing,404,,not found
+2026-06-07T20:04:52.172Z,johnsch02,Chad Johnson,https://www.hockey-reference.com/req/202301051/images/headshots/johnsch02.jpg,data\hockey_reference_headshots\johnsch02.jpg,downloaded,200,3553,ok
+2026-06-07T20:05:02.392Z,stephch02,Chandler Stephenson,https://www.hockey-reference.com/req/202301051/images/headshots/stephch02.jpg,data\hockey_reference_headshots\stephch02.jpg,missing,404,,not found
+2026-06-07T20:05:12.611Z,dastoch01,Charle-Edouard D'Astous,https://www.hockey-reference.com/req/202301051/images/headshots/dastoch01.jpg,data\hockey_reference_headshots\dastoch01.jpg,missing,404,,not found
+2026-06-07T20:05:22.828Z,coylech01,Charlie Coyle,https://www.hockey-reference.com/req/202301051/images/headshots/coylech01.jpg,data\hockey_reference_headshots\coylech01.jpg,downloaded,200,2979,ok
+2026-06-07T20:05:32.983Z,huddych01,Charlie Huddy,https://www.hockey-reference.com/req/202301051/images/headshots/huddych01.jpg,data\hockey_reference_headshots\huddych01.jpg,downloaded,200,4934,ok
+2026-06-07T20:05:43.218Z,lindgch01,Charlie Lindgren,https://www.hockey-reference.com/req/202301051/images/headshots/lindgch01.jpg,data\hockey_reference_headshots\lindgch01.jpg,missing,404,,not found
+2026-06-07T20:05:53.447Z,mcavoch01,Charlie McAvoy,https://www.hockey-reference.com/req/202301051/images/headshots/mcavoch01.jpg,data\hockey_reference_headshots\mcavoch01.jpg,missing,404,,not found
+2026-06-07T20:06:03.668Z,simmech01,Charlie Simmer,https://www.hockey-reference.com/req/202301051/images/headshots/simmech01.jpg,data\hockey_reference_headshots\simmech01.jpg,missing,404,,not found
+2026-06-07T20:06:13.831Z,chelich01,Chris Chelios,https://www.hockey-reference.com/req/202301051/images/headshots/chelich01.jpg,data\hockey_reference_headshots\chelich01.jpg,downloaded,200,3045,ok
+2026-06-07T20:06:23.928Z,drurych01,Chris Drury,https://www.hockey-reference.com/req/202301051/images/headshots/drurych01.jpg,data\hockey_reference_headshots\drurych01.jpg,downloaded,200,3128,ok
+2026-06-07T20:06:34.137Z,higgich01,Chris Higgins,https://www.hockey-reference.com/req/202301051/images/headshots/higgich01.jpg,data\hockey_reference_headshots\higgich01.jpg,downloaded,200,3149,ok
+2026-06-07T20:06:44.345Z,kreidch01,Chris Kreider,https://www.hockey-reference.com/req/202301051/images/headshots/kreidch01.jpg,data\hockey_reference_headshots\kreidch01.jpg,downloaded,200,3351,ok
+2026-06-07T20:06:54.583Z,kunitch01,Chris Kunitz,https://www.hockey-reference.com/req/202301051/images/headshots/kunitch01.jpg,data\hockey_reference_headshots\kunitch01.jpg,downloaded,200,2839,ok
+2026-06-07T20:07:04.882Z,masonch02,Chris Mason,https://www.hockey-reference.com/req/202301051/images/headshots/masonch02.jpg,data\hockey_reference_headshots\masonch02.jpg,missing,404,,not found
+2026-06-07T20:07:14.995Z,osgooch01,Chris Osgood,https://www.hockey-reference.com/req/202301051/images/headshots/osgooch01.jpg,data\hockey_reference_headshots\osgooch01.jpg,downloaded,200,6985,ok
+2026-06-07T20:07:25.197Z,phillch02,Chris Phillips,https://www.hockey-reference.com/req/202301051/images/headshots/phillch02.jpg,data\hockey_reference_headshots\phillch02.jpg,downloaded,200,3140,ok
+2026-06-07T20:07:35.301Z,prongch01,Chris Pronger,https://www.hockey-reference.com/req/202301051/images/headshots/prongch01.jpg,data\hockey_reference_headshots\prongch01.jpg,downloaded,200,2933,ok
+2026-06-07T20:07:45.521Z,simonch01,Chris Simon,https://www.hockey-reference.com/req/202301051/images/headshots/simonch01.jpg,data\hockey_reference_headshots\simonch01.jpg,missing,404,,not found
+2026-06-07T20:07:55.757Z,stewach02,Chris Stewart,https://www.hockey-reference.com/req/202301051/images/headshots/stewach02.jpg,data\hockey_reference_headshots\stewach02.jpg,downloaded,200,3345,ok
+2026-06-07T20:08:05.954Z,tanevch01,Chris Tanev,https://www.hockey-reference.com/req/202301051/images/headshots/tanevch01.jpg,data\hockey_reference_headshots\tanevch01.jpg,downloaded,200,3113,ok
+2026-06-07T20:08:16.156Z,terrech01,Chris Terreri,https://www.hockey-reference.com/req/202301051/images/headshots/terrech01.jpg,data\hockey_reference_headshots\terrech01.jpg,missing,404,,not found
+2026-06-07T20:08:26.380Z,dvorach01,Christian Dvorak,https://www.hockey-reference.com/req/202301051/images/headshots/dvorach01.jpg,data\hockey_reference_headshots\dvorach01.jpg,missing,404,,not found
+2026-06-07T20:08:36.585Z,ehrhoch01,Christian Ehrhoff,https://www.hockey-reference.com/req/202301051/images/headshots/ehrhoch01.jpg,data\hockey_reference_headshots\ehrhoch01.jpg,downloaded,200,2862,ok
+2026-06-07T20:08:46.799Z,schubch01,Christoph Schubert,https://www.hockey-reference.com/req/202301051/images/headshots/schubch01.jpg,data\hockey_reference_headshots\schubch01.jpg,missing,404,,not found
+2026-06-07T20:08:57.027Z,macarcl01,Clarke MacArthur,https://www.hockey-reference.com/req/202301051/images/headshots/macarcl01.jpg,data\hockey_reference_headshots\macarcl01.jpg,downloaded,200,3116,ok
+2026-06-07T20:09:07.248Z,giroucl01,Claude Giroux,https://www.hockey-reference.com/req/202301051/images/headshots/giroucl01.jpg,data\hockey_reference_headshots\giroucl01.jpg,downloaded,200,3668,ok
+2026-06-07T20:09:17.478Z,lemiecl01,Claude Lemieux,https://www.hockey-reference.com/req/202301051/images/headshots/lemiecl01.jpg,data\hockey_reference_headshots\lemiecl01.jpg,missing,404,,not found
+2026-06-07T20:09:27.718Z,kellecl01,Clayton Keller,https://www.hockey-reference.com/req/202301051/images/headshots/kellecl01.jpg,data\hockey_reference_headshots\kellecl01.jpg,missing,404,,not found
+2026-06-07T20:09:37.939Z,ronnicl01,Cliff Ronning,https://www.hockey-reference.com/req/202301051/images/headshots/ronnicl01.jpg,data\hockey_reference_headshots\ronnicl01.jpg,missing,404,,not found
+2026-06-07T20:09:48.158Z,malarcl01,Clint Malarchuk,https://www.hockey-reference.com/req/202301051/images/headshots/malarcl01.jpg,data\hockey_reference_headshots\malarcl01.jpg,missing,404,,not found
+2026-06-07T20:09:58.374Z,cecico01,Cody Ceci,https://www.hockey-reference.com/req/202301051/images/headshots/cecico01.jpg,data\hockey_reference_headshots\cecico01.jpg,downloaded,200,3051,ok
+2026-06-07T20:10:08.602Z,eakinco01,Cody Eakin,https://www.hockey-reference.com/req/202301051/images/headshots/eakinco01.jpg,data\hockey_reference_headshots\eakinco01.jpg,downloaded,200,3112,ok
+2026-06-07T20:10:18.818Z,fransco01,Cody Franson,https://www.hockey-reference.com/req/202301051/images/headshots/fransco01.jpg,data\hockey_reference_headshots\fransco01.jpg,downloaded,200,3102,ok
+2026-06-07T20:10:29.017Z,caufico01,Cole Caufield,https://www.hockey-reference.com/req/202301051/images/headshots/caufico01.jpg,data\hockey_reference_headshots\caufico01.jpg,missing,404,,not found
+2026-06-07T20:10:39.239Z,perfeco01,Cole Perfetti,https://www.hockey-reference.com/req/202301051/images/headshots/perfeco01.jpg,data\hockey_reference_headshots\perfeco01.jpg,missing,404,,not found
+2026-06-07T20:10:49.448Z,milleco02,Colin Miller,https://www.hockey-reference.com/req/202301051/images/headshots/milleco02.jpg,data\hockey_reference_headshots\milleco02.jpg,missing,404,,not found
+2026-06-07T20:10:59.677Z,wilsoco01,Colin Wilson,https://www.hockey-reference.com/req/202301051/images/headshots/wilsoco01.jpg,data\hockey_reference_headshots\wilsoco01.jpg,downloaded,200,3075,ok
+2026-06-07T20:11:09.895Z,grafco01,Collin Graf,https://www.hockey-reference.com/req/202301051/images/headshots/grafco01.jpg,data\hockey_reference_headshots\grafco01.jpg,missing,404,,not found
+2026-06-07T20:11:20.101Z,parayco01,Colton Parayko,https://www.hockey-reference.com/req/202301051/images/headshots/parayco01.jpg,data\hockey_reference_headshots\parayco01.jpg,missing,404,,not found
+2026-06-07T20:11:30.300Z,sissoco01,Colton Sissons,https://www.hockey-reference.com/req/202301051/images/headshots/sissoco01.jpg,data\hockey_reference_headshots\sissoco01.jpg,missing,404,,not found
+2026-06-07T20:11:40.514Z,bedarco01,Connor Bedard,https://www.hockey-reference.com/req/202301051/images/headshots/bedarco01.jpg,data\hockey_reference_headshots\bedarco01.jpg,missing,404,,not found
+2026-06-07T20:11:50.747Z,helleco01,Connor Hellebuyck,https://www.hockey-reference.com/req/202301051/images/headshots/helleco01.jpg,data\hockey_reference_headshots\helleco01.jpg,missing,404,,not found
+2026-06-07T20:12:00.972Z,ingraco01,Connor Ingram,https://www.hockey-reference.com/req/202301051/images/headshots/ingraco01.jpg,data\hockey_reference_headshots\ingraco01.jpg,missing,404,,not found
+2026-06-07T20:12:11.185Z,mcdavco01,Connor McDavid,https://www.hockey-reference.com/req/202301051/images/headshots/mcdavco01.jpg,data\hockey_reference_headshots\mcdavco01.jpg,downloaded,200,3239,ok
+2026-06-07T20:12:21.393Z,mcmicco01,Connor McMichael,https://www.hockey-reference.com/req/202301051/images/headshots/mcmicco01.jpg,data\hockey_reference_headshots\mcmicco01.jpg,missing,404,,not found
+2026-06-07T20:12:31.597Z,garlaco01,Conor Garland,https://www.hockey-reference.com/req/202301051/images/headshots/garlaco01.jpg,data\hockey_reference_headshots\garlaco01.jpg,missing,404,,not found
+2026-06-07T20:12:41.818Z,crawfco01,Corey Crawford,https://www.hockey-reference.com/req/202301051/images/headshots/crawfco01.jpg,data\hockey_reference_headshots\crawfco01.jpg,downloaded,200,3241,ok
+2026-06-07T20:12:52.036Z,perryco01,Corey Perry,https://www.hockey-reference.com/req/202301051/images/headshots/perryco01.jpg,data\hockey_reference_headshots\perryco01.jpg,downloaded,200,2767,ok
+2026-06-07T20:13:02.232Z,schneco01,Cory Schneider,https://www.hockey-reference.com/req/202301051/images/headshots/schneco01.jpg,data\hockey_reference_headshots\schneco01.jpg,downloaded,200,2596,ok
+2026-06-07T20:13:12.451Z,stillco01,Cory Stillman,https://www.hockey-reference.com/req/202301051/images/headshots/stillco01.jpg,data\hockey_reference_headshots\stillco01.jpg,missing,404,,not found
+2026-06-07T20:13:22.654Z,andercr01,Craig Anderson,https://www.hockey-reference.com/req/202301051/images/headshots/andercr01.jpg,data\hockey_reference_headshots\andercr01.jpg,downloaded,200,2894,ok
+2026-06-07T20:13:32.872Z,conrocr01,Craig Conroy,https://www.hockey-reference.com/req/202301051/images/headshots/conrocr01.jpg,data\hockey_reference_headshots\conrocr01.jpg,missing,404,,not found
+2026-06-07T20:13:43.087Z,hartscr01,Craig Hartsburg,https://www.hockey-reference.com/req/202301051/images/headshots/hartscr01.jpg,data\hockey_reference_headshots\hartscr01.jpg,missing,404,,not found
+2026-06-07T20:13:53.299Z,jannecr01,Craig Janney,https://www.hockey-reference.com/req/202301051/images/headshots/jannecr01.jpg,data\hockey_reference_headshots\jannecr01.jpg,missing,404,,not found
+2026-06-07T20:14:03.514Z,rivetcr01,Craig Rivet,https://www.hockey-reference.com/req/202301051/images/headshots/rivetcr01.jpg,data\hockey_reference_headshots\rivetcr01.jpg,missing,404,,not found
+2026-06-07T20:14:13.733Z,smithcr01,Craig Smith,https://www.hockey-reference.com/req/202301051/images/headshots/smithcr01.jpg,data\hockey_reference_headshots\smithcr01.jpg,downloaded,200,3284,ok
+2026-06-07T20:14:23.972Z,huetcr01,Cristobal Huet,https://www.hockey-reference.com/req/202301051/images/headshots/huetcr01.jpg,data\hockey_reference_headshots\huetcr01.jpg,missing,404,,not found
+2026-06-07T20:14:34.175Z,browncu01,Curtis Brown,https://www.hockey-reference.com/req/202301051/images/headshots/browncu01.jpg,data\hockey_reference_headshots\browncu01.jpg,missing,404,,not found
+2026-06-07T20:14:44.367Z,glenccu01,Curtis Glencross,https://www.hockey-reference.com/req/202301051/images/headshots/glenccu01.jpg,data\hockey_reference_headshots\glenccu01.jpg,downloaded,200,3064,ok
+2026-06-07T20:14:54.514Z,josepcu01,Curtis Joseph,https://www.hockey-reference.com/req/202301051/images/headshots/josepcu01.jpg,data\hockey_reference_headshots\josepcu01.jpg,downloaded,200,3857,ok
+2026-06-07T20:15:04.745Z,gauthcu01,Cutter Gauthier,https://www.hockey-reference.com/req/202301051/images/headshots/gauthcu01.jpg,data\hockey_reference_headshots\gauthcu01.jpg,missing,404,,not found
+2026-06-07T20:15:14.969Z,zubruda01,Dainius Zubrus,https://www.hockey-reference.com/req/202301051/images/headshots/zubruda01.jpg,data\hockey_reference_headshots\zubruda01.jpg,downloaded,200,2760,ok
+2026-06-07T20:15:25.074Z,hawerda01,Dale Hawerchuk,https://www.hockey-reference.com/req/202301051/images/headshots/hawerda01.jpg,data\hockey_reference_headshots\hawerda01.jpg,downloaded,200,3624,ok
+2026-06-07T20:15:35.279Z,rhodeda01,Damian Rhodes,https://www.hockey-reference.com/req/202301051/images/headshots/rhodeda01.jpg,data\hockey_reference_headshots\rhodeda01.jpg,missing,404,,not found
+2026-06-07T20:15:45.479Z,severda01,Damon Severson,https://www.hockey-reference.com/req/202301051/images/headshots/severda01.jpg,data\hockey_reference_headshots\severda01.jpg,missing,404,,not found
+2026-06-07T20:15:55.580Z,bouchda01,Dan Bouchard,https://www.hockey-reference.com/req/202301051/images/headshots/bouchda01.jpg,data\hockey_reference_headshots\bouchda01.jpg,downloaded,200,4315,ok
+2026-06-07T20:16:05.785Z,boyleda01,Dan Boyle,https://www.hockey-reference.com/req/202301051/images/headshots/boyleda01.jpg,data\hockey_reference_headshots\boyleda01.jpg,downloaded,200,2938,ok
+2026-06-07T20:16:16.021Z,cloutda01,Dan Cloutier,https://www.hockey-reference.com/req/202301051/images/headshots/cloutda01.jpg,data\hockey_reference_headshots\cloutda01.jpg,missing,404,,not found
+2026-06-07T20:16:26.251Z,ellisda01,Dan Ellis,https://www.hockey-reference.com/req/202301051/images/headshots/ellisda01.jpg,data\hockey_reference_headshots\ellisda01.jpg,downloaded,200,3060,ok
+2026-06-07T20:16:36.487Z,girarda01,Dan Girardi,https://www.hockey-reference.com/req/202301051/images/headshots/girarda01.jpg,data\hockey_reference_headshots\girarda01.jpg,downloaded,200,3417,ok
+2026-06-07T20:16:46.715Z,hamhuda01,Dan Hamhuis,https://www.hockey-reference.com/req/202301051/images/headshots/hamhuda01.jpg,data\hockey_reference_headshots\hamhuda01.jpg,downloaded,200,3070,ok
+2026-06-07T20:16:56.950Z,mcgilda01,Dan McGillis,https://www.hockey-reference.com/req/202301051/images/headshots/mcgilda01.jpg,data\hockey_reference_headshots\mcgilda01.jpg,missing,404,,not found
+2026-06-07T20:17:07.062Z,alfreda01,Daniel Alfredsson,https://www.hockey-reference.com/req/202301051/images/headshots/alfreda01.jpg,data\hockey_reference_headshots\alfreda01.jpg,downloaded,200,2871,ok
+2026-06-07T20:17:17.275Z,berthda01,Daniel Berthiaume,https://www.hockey-reference.com/req/202301051/images/headshots/berthda01.jpg,data\hockey_reference_headshots\berthda01.jpg,missing,404,,not found
+2026-06-07T20:17:27.504Z,brierda01,Daniel Brière,https://www.hockey-reference.com/req/202301051/images/headshots/brierda01.jpg,data\hockey_reference_headshots\brierda01.jpg,downloaded,200,3059,ok
+2026-06-07T20:17:37.722Z,clearda01,Daniel Cleary,https://www.hockey-reference.com/req/202301051/images/headshots/clearda01.jpg,data\hockey_reference_headshots\clearda01.jpg,downloaded,200,2950,ok
+2026-06-07T20:17:47.944Z,sedinda01,Daniel Sedin,https://www.hockey-reference.com/req/202301051/images/headshots/sedinda01.jpg,data\hockey_reference_headshots\sedinda01.jpg,downloaded,200,3043,ok
+2026-06-07T20:17:58.142Z,spronda01,Daniel Sprong,https://www.hockey-reference.com/req/202301051/images/headshots/spronda01.jpg,data\hockey_reference_headshots\spronda01.jpg,missing,404,,not found
+2026-06-07T20:18:08.360Z,vladada01,Daniel Vladař,https://www.hockey-reference.com/req/202301051/images/headshots/vladada01.jpg,data\hockey_reference_headshots\vladada01.jpg,missing,404,,not found
+2026-06-07T20:18:18.591Z,dekeyda01,Danny DeKeyser,https://www.hockey-reference.com/req/202301051/images/headshots/dekeyda01.jpg,data\hockey_reference_headshots\dekeyda01.jpg,downloaded,200,3003,ok
+2026-06-07T20:18:28.822Z,gareda01,Danny Gare,https://www.hockey-reference.com/req/202301051/images/headshots/gareda01.jpg,data\hockey_reference_headshots\gareda01.jpg,missing,404,,not found
+2026-06-07T20:18:39.015Z,fabbrda01,Dante Fabbro,https://www.hockey-reference.com/req/202301051/images/headshots/fabbrda01.jpg,data\hockey_reference_headshots\fabbrda01.jpg,missing,404,,not found
+2026-06-07T20:18:49.214Z,heatlda01,Dany Heatley,https://www.hockey-reference.com/req/202301051/images/headshots/heatlda01.jpg,data\hockey_reference_headshots\heatlda01.jpg,downloaded,200,3123,ok
+2026-06-07T20:18:59.416Z,kuempda01,Darcy Kuemper,https://www.hockey-reference.com/req/202301051/images/headshots/kuempda01.jpg,data\hockey_reference_headshots\kuempda01.jpg,downloaded,200,3188,ok
+2026-06-07T20:19:09.650Z,tuckeda01,Darcy Tucker,https://www.hockey-reference.com/req/202301051/images/headshots/tuckeda01.jpg,data\hockey_reference_headshots\tuckeda01.jpg,missing,404,,not found
+2026-06-07T20:19:19.848Z,puppada01,Daren Puppa,https://www.hockey-reference.com/req/202301051/images/headshots/puppada01.jpg,data\hockey_reference_headshots\puppada01.jpg,downloaded,200,4232,ok
+2026-06-07T20:19:30.051Z,nurseda01,Darnell Nurse,https://www.hockey-reference.com/req/202301051/images/headshots/nurseda01.jpg,data\hockey_reference_headshots\nurseda01.jpg,missing,404,,not found
+2026-06-07T20:19:40.268Z,pangda01,Darren Pang,https://www.hockey-reference.com/req/202301051/images/headshots/pangda01.jpg,data\hockey_reference_headshots\pangda01.jpg,missing,404,,not found
+2026-06-07T20:19:50.503Z,raddyda01,Darren Raddysh,https://www.hockey-reference.com/req/202301051/images/headshots/raddyda01.jpg,data\hockey_reference_headshots\raddyda01.jpg,missing,404,,not found
+2026-06-07T20:20:00.731Z,veitcda01,Darren Veitch,https://www.hockey-reference.com/req/202301051/images/headshots/veitcda01.jpg,data\hockey_reference_headshots\veitcda01.jpg,missing,404,,not found
+2026-06-07T20:20:10.828Z,sittlda01,Darryl Sittler,https://www.hockey-reference.com/req/202301051/images/headshots/sittlda01.jpg,data\hockey_reference_headshots\sittlda01.jpg,downloaded,200,3363,ok
+2026-06-07T20:20:20.943Z,sydorda01,Darryl Sydor,https://www.hockey-reference.com/req/202301051/images/headshots/sydorda01.jpg,data\hockey_reference_headshots\sydorda01.jpg,downloaded,200,4211,ok
+2026-06-07T20:20:31.057Z,andreda01,Dave Andreychuk,https://www.hockey-reference.com/req/202301051/images/headshots/andreda01.jpg,data\hockey_reference_headshots\andreda01.jpg,downloaded,200,3976,ok
+2026-06-07T20:20:41.295Z,babycda01,Dave Babych,https://www.hockey-reference.com/req/202301051/images/headshots/babycda01.jpg,data\hockey_reference_headshots\babycda01.jpg,missing,404,,not found
+2026-06-07T20:20:51.497Z,elletda01,Dave Ellett,https://www.hockey-reference.com/req/202301051/images/headshots/elletda01.jpg,data\hockey_reference_headshots\elletda01.jpg,missing,404,,not found
+2026-06-07T20:21:01.724Z,gagneda01,Dave Gagner,https://www.hockey-reference.com/req/202301051/images/headshots/gagneda01.jpg,data\hockey_reference_headshots\gagneda01.jpg,missing,404,,not found
+2026-06-07T20:21:11.932Z,mansoda01,Dave Manson,https://www.hockey-reference.com/req/202301051/images/headshots/mansoda01.jpg,data\hockey_reference_headshots\mansoda01.jpg,missing,404,,not found
+2026-06-07T20:21:22.074Z,tayloda01,Dave Taylor,https://www.hockey-reference.com/req/202301051/images/headshots/tayloda01.jpg,data\hockey_reference_headshots\tayloda01.jpg,downloaded,200,4171,ok
+2026-06-07T20:21:32.299Z,aebisda01,David Aebischer,https://www.hockey-reference.com/req/202301051/images/headshots/aebisda01.jpg,data\hockey_reference_headshots\aebisda01.jpg,missing,404,,not found
+2026-06-07T20:21:42.524Z,backeda01,David Backes,https://www.hockey-reference.com/req/202301051/images/headshots/backeda01.jpg,data\hockey_reference_headshots\backeda01.jpg,downloaded,200,3530,ok
+2026-06-07T20:21:52.724Z,boothda01,David Booth,https://www.hockey-reference.com/req/202301051/images/headshots/boothda01.jpg,data\hockey_reference_headshots\boothda01.jpg,downloaded,200,3131,ok
+2026-06-07T20:22:02.969Z,clarkda03,David Clarkson,https://www.hockey-reference.com/req/202301051/images/headshots/clarkda03.jpg,data\hockey_reference_headshots\clarkda03.jpg,downloaded,200,3400,ok
+2026-06-07T20:22:13.216Z,deshada01,David Desharnais,https://www.hockey-reference.com/req/202301051/images/headshots/deshada01.jpg,data\hockey_reference_headshots\deshada01.jpg,downloaded,200,3005,ok
+2026-06-07T20:22:23.419Z,jonesda01,David Jones,https://www.hockey-reference.com/req/202301051/images/headshots/jonesda01.jpg,data\hockey_reference_headshots\jonesda01.jpg,downloaded,200,3015,ok
+2026-06-07T20:22:33.659Z,krejcda01,David Krejčí,https://www.hockey-reference.com/req/202301051/images/headshots/krejcda01.jpg,data\hockey_reference_headshots\krejcda01.jpg,downloaded,200,3478,ok
+2026-06-07T20:22:43.882Z,legwada01,David Legwand,https://www.hockey-reference.com/req/202301051/images/headshots/legwada01.jpg,data\hockey_reference_headshots\legwada01.jpg,downloaded,200,3021,ok
+2026-06-07T20:22:54.093Z,pastrda01,David Pastrňák,https://www.hockey-reference.com/req/202301051/images/headshots/pastrda01.jpg,data\hockey_reference_headshots\pastrda01.jpg,missing,404,,not found
+2026-06-07T20:23:04.321Z,perroda01,David Perron,https://www.hockey-reference.com/req/202301051/images/headshots/perroda01.jpg,data\hockey_reference_headshots\perroda01.jpg,downloaded,200,3251,ok
+2026-06-07T20:23:14.550Z,rittida01,David Rittich,https://www.hockey-reference.com/req/202301051/images/headshots/rittida01.jpg,data\hockey_reference_headshots\rittida01.jpg,missing,404,,not found
+2026-06-07T20:23:24.751Z,savarda01,David Savard,https://www.hockey-reference.com/req/202301051/images/headshots/savarda01.jpg,data\hockey_reference_headshots\savarda01.jpg,downloaded,200,3360,ok
+2026-06-07T20:23:34.993Z,vyborda01,David Výborný,https://www.hockey-reference.com/req/202301051/images/headshots/vyborda01.jpg,data\hockey_reference_headshots\vyborda01.jpg,downloaded,200,8284,ok
+2026-06-07T20:23:45.210Z,merceda01,Dawson Mercer,https://www.hockey-reference.com/req/202301051/images/headshots/merceda01.jpg,data\hockey_reference_headshots\merceda01.jpg,missing,404,,not found
+2026-06-07T20:23:55.428Z,langkda01,Daymond Langkow,https://www.hockey-reference.com/req/202301051/images/headshots/langkda01.jpg,data\hockey_reference_headshots\langkda01.jpg,missing,404,,not found
+2026-06-07T20:24:05.585Z,grebede01,Denis Grebeshkov,https://www.hockey-reference.com/req/202301051/images/headshots/grebede01.jpg,data\hockey_reference_headshots\grebede01.jpg,downloaded,200,3532,ok
+2026-06-07T20:24:15.692Z,potvide01,Denis Potvin,https://www.hockey-reference.com/req/202301051/images/headshots/potvide01.jpg,data\hockey_reference_headshots\potvide01.jpg,downloaded,200,3584,ok
+2026-06-07T20:24:25.834Z,savarde01,Denis Savard,https://www.hockey-reference.com/req/202301051/images/headshots/savarde01.jpg,data\hockey_reference_headshots\savarde01.jpg,downloaded,200,3317,ok
+2026-06-07T20:24:36.068Z,marukde01,Dennis Maruk,https://www.hockey-reference.com/req/202301051/images/headshots/marukde01.jpg,data\hockey_reference_headshots\marukde01.jpg,missing,404,,not found
+2026-06-07T20:24:46.308Z,seidede01,Dennis Seidenberg,https://www.hockey-reference.com/req/202301051/images/headshots/seidede01.jpg,data\hockey_reference_headshots\seidede01.jpg,downloaded,200,3066,ok
+2026-06-07T20:24:56.509Z,widemde01,Dennis Wideman,https://www.hockey-reference.com/req/202301051/images/headshots/widemde01.jpg,data\hockey_reference_headshots\widemde01.jpg,downloaded,200,3097,ok
+2026-06-07T20:25:06.758Z,mateyde01,Denton Mateychuk,https://www.hockey-reference.com/req/202301051/images/headshots/mateyde01.jpg,data\hockey_reference_headshots\mateyde01.jpg,missing,404,,not found
+2026-06-07T20:25:16.987Z,forbode01,Derek Forbort,https://www.hockey-reference.com/req/202301051/images/headshots/forbode01.jpg,data\hockey_reference_headshots\forbode01.jpg,missing,404,,not found
+2026-06-07T20:25:27.120Z,morride01,Derek Morris,https://www.hockey-reference.com/req/202301051/images/headshots/morride01.jpg,data\hockey_reference_headshots\morride01.jpg,downloaded,200,2767,ok
+2026-06-07T20:25:37.346Z,royde01,Derek Roy,https://www.hockey-reference.com/req/202301051/images/headshots/royde01.jpg,data\hockey_reference_headshots\royde01.jpg,downloaded,200,3497,ok
+2026-06-07T20:25:47.590Z,stepade01,Derek Stepan,https://www.hockey-reference.com/req/202301051/images/headshots/stepade01.jpg,data\hockey_reference_headshots\stepade01.jpg,downloaded,200,3261,ok
+2026-06-07T20:25:57.719Z,hatchde01,Derian Hatcher,https://www.hockey-reference.com/req/202301051/images/headshots/hatchde01.jpg,data\hockey_reference_headshots\hatchde01.jpg,downloaded,200,4735,ok
+2026-06-07T20:26:07.949Z,brassde01,Derick Brassard,https://www.hockey-reference.com/req/202301051/images/headshots/brassde01.jpg,data\hockey_reference_headshots\brassde01.jpg,downloaded,200,3364,ok
+2026-06-07T20:26:18.177Z,engelde01,Deryk Engelland,https://www.hockey-reference.com/req/202301051/images/headshots/engelde01.jpg,data\hockey_reference_headshots\engelde01.jpg,downloaded,200,2937,ok
+2026-06-07T20:26:28.412Z,dubnyde01,Devan Dubnyk,https://www.hockey-reference.com/req/202301051/images/headshots/dubnyde01.jpg,data\hockey_reference_headshots\dubnyde01.jpg,downloaded,200,3343,ok
+2026-06-07T20:26:38.618Z,setogde01,Devin Setoguchi,https://www.hockey-reference.com/req/202301051/images/headshots/setogde01.jpg,data\hockey_reference_headshots\setogde01.jpg,downloaded,200,2800,ok
+2026-06-07T20:26:48.852Z,toewsde01,Devon Toews,https://www.hockey-reference.com/req/202301051/images/headshots/toewsde01.jpg,data\hockey_reference_headshots\toewsde01.jpg,missing,404,,not found
+2026-06-07T20:26:59.088Z,redmodi01,Dick Redmond,https://www.hockey-reference.com/req/202301051/images/headshots/redmodi01.jpg,data\hockey_reference_headshots\redmodi01.jpg,missing,404,,not found
+2026-06-07T20:27:09.353Z,tarnsdi01,Dick Tärnström,https://www.hockey-reference.com/req/202301051/images/headshots/tarnsdi01.jpg,data\hockey_reference_headshots\tarnsdi01.jpg,missing,404,,not found
+2026-06-07T20:27:19.512Z,ciccadi01,Dino Ciccarelli,https://www.hockey-reference.com/req/202301051/images/headshots/ciccadi01.jpg,data\hockey_reference_headshots\ciccadi01.jpg,downloaded,200,3281,ok
+2026-06-07T20:27:29.745Z,phanedi01,Dion Phaneuf,https://www.hockey-reference.com/req/202301051/images/headshots/phanedi01.jpg,data\hockey_reference_headshots\phanedi01.jpg,downloaded,200,3293,ok
+2026-06-07T20:27:39.978Z,kalindm01,Dmitri Kalinin,https://www.hockey-reference.com/req/202301051/images/headshots/kalindm01.jpg,data\hockey_reference_headshots\kalindm01.jpg,missing,404,,not found
+2026-06-07T20:27:50.217Z,khrisdm01,Dmitri Khristich,https://www.hockey-reference.com/req/202301051/images/headshots/khrisdm01.jpg,data\hockey_reference_headshots\khrisdm01.jpg,missing,404,,not found
+2026-06-07T20:28:00.457Z,vorondi01,Dmitri Voronkov,https://www.hockey-reference.com/req/202301051/images/headshots/vorondi01.jpg,data\hockey_reference_headshots\vorondi01.jpg,missing,404,,not found
+2026-06-07T20:28:10.672Z,kulikdm01,Dmitry Kulikov,https://www.hockey-reference.com/req/202301051/images/headshots/kulikdm01.jpg,data\hockey_reference_headshots\kulikdm01.jpg,downloaded,200,3290,ok
+2026-06-07T20:28:20.906Z,orlovdm01,Dmitry Orlov,https://www.hockey-reference.com/req/202301051/images/headshots/orlovdm01.jpg,data\hockey_reference_headshots\orlovdm01.jpg,downloaded,200,2876,ok
+2026-06-07T20:28:31.137Z,roussdo01,Dominic Roussel,https://www.hockey-reference.com/req/202301051/images/headshots/roussdo01.jpg,data\hockey_reference_headshots\roussdo01.jpg,missing,404,,not found
+2026-06-07T20:28:41.262Z,hasekdo01,Dominik Hašek,https://www.hockey-reference.com/req/202301051/images/headshots/hasekdo01.jpg,data\hockey_reference_headshots\hasekdo01.jpg,downloaded,200,3114,ok
+2026-06-07T20:28:51.492Z,kubaldo01,Dominik Kubalík,https://www.hockey-reference.com/req/202301051/images/headshots/kubaldo01.jpg,data\hockey_reference_headshots\kubaldo01.jpg,missing,404,,not found
+2026-06-07T20:29:01.742Z,beaupdo01,Don Beaupre,https://www.hockey-reference.com/req/202301051/images/headshots/beaupdo01.jpg,data\hockey_reference_headshots\beaupdo01.jpg,missing,404,,not found
+2026-06-07T20:29:11.907Z,edwardo01,Don Edwards,https://www.hockey-reference.com/req/202301051/images/headshots/edwardo01.jpg,data\hockey_reference_headshots\edwardo01.jpg,downloaded,200,5024,ok
+2026-06-07T20:29:22.157Z,bodgedo01,Doug Bodger,https://www.hockey-reference.com/req/202301051/images/headshots/bodgedo01.jpg,data\hockey_reference_headshots\bodgedo01.jpg,missing,404,,not found
+2026-06-07T20:29:32.273Z,gilmodo01,Doug Gilmour,https://www.hockey-reference.com/req/202301051/images/headshots/gilmodo01.jpg,data\hockey_reference_headshots\gilmodo01.jpg,downloaded,200,3559,ok
+2026-06-07T20:29:43.423Z,weighdo01,Doug Weight,https://www.hockey-reference.com/req/202301051/images/headshots/weighdo01.jpg,data\hockey_reference_headshots\weighdo01.jpg,downloaded,200,3559,ok
+2026-06-07T20:29:53.551Z,wilsodo01,Doug Wilson,https://www.hockey-reference.com/req/202301051/images/headshots/wilsodo01.jpg,data\hockey_reference_headshots\wilsodo01.jpg,downloaded,200,4031,ok
+2026-06-07T20:30:03.782Z,hamildo01,Dougie Hamilton,https://www.hockey-reference.com/req/202301051/images/headshots/hamildo01.jpg,data\hockey_reference_headshots\hamildo01.jpg,downloaded,200,3401,ok
+2026-06-07T20:30:14.036Z,bathedr01,Drake Batherson,https://www.hockey-reference.com/req/202301051/images/headshots/bathedr01.jpg,data\hockey_reference_headshots\bathedr01.jpg,missing,404,,not found
+2026-06-07T20:30:24.273Z,berehdr01,Drake Berehowsky,https://www.hockey-reference.com/req/202301051/images/headshots/berehdr01.jpg,data\hockey_reference_headshots\berehdr01.jpg,missing,404,,not found
+2026-06-07T20:30:34.497Z,doughdr01,Drew Doughty,https://www.hockey-reference.com/req/202301051/images/headshots/doughdr01.jpg,data\hockey_reference_headshots\doughdr01.jpg,downloaded,200,2969,ok
+2026-06-07T20:30:44.738Z,staffdr01,Drew Stafford,https://www.hockey-reference.com/req/202301051/images/headshots/staffdr01.jpg,data\hockey_reference_headshots\staffdr01.jpg,downloaded,200,2938,ok
+2026-06-07T20:30:54.952Z,keithdu01,Duncan Keith,https://www.hockey-reference.com/req/202301051/images/headshots/keithdu01.jpg,data\hockey_reference_headshots\keithdu01.jpg,downloaded,200,3451,ok
+2026-06-07T20:31:05.203Z,browndu01,Dustin Brown,https://www.hockey-reference.com/req/202301051/images/headshots/browndu01.jpg,data\hockey_reference_headshots\browndu01.jpg,downloaded,200,2819,ok
+2026-06-07T20:31:15.466Z,byfugdu01,Dustin Byfuglien,https://www.hockey-reference.com/req/202301051/images/headshots/byfugdu01.jpg,data\hockey_reference_headshots\byfugdu01.jpg,downloaded,200,2871,ok
+2026-06-07T20:31:25.681Z,pennedu01,Dustin Penner,https://www.hockey-reference.com/req/202301051/images/headshots/pennedu01.jpg,data\hockey_reference_headshots\pennedu01.jpg,downloaded,200,2794,ok
+2026-06-07T20:31:35.967Z,wolfdu01,Dustin Wolf,https://www.hockey-reference.com/req/202301051/images/headshots/wolfdu01.jpg,data\hockey_reference_headshots\wolfdu01.jpg,missing,404,,not found
+2026-06-07T20:31:46.190Z,westcdu01,Duvie Westcott,https://www.hockey-reference.com/req/202301051/images/headshots/westcdu01.jpg,data\hockey_reference_headshots\westcdu01.jpg,missing,404,,not found
+2026-06-07T20:31:56.353Z,rolosdw01,Dwayne Roloson,https://www.hockey-reference.com/req/202301051/images/headshots/rolosdw01.jpg,data\hockey_reference_headshots\rolosdw01.jpg,downloaded,200,7856,ok
+2026-06-07T20:32:06.588Z,cozendy01,Dylan Cozens,https://www.hockey-reference.com/req/202301051/images/headshots/cozendy01.jpg,data\hockey_reference_headshots\cozendy01.jpg,missing,404,,not found
+2026-06-07T20:32:16.837Z,demeldy01,Dylan DeMelo,https://www.hockey-reference.com/req/202301051/images/headshots/demeldy01.jpg,data\hockey_reference_headshots\demeldy01.jpg,missing,404,,not found
+2026-06-07T20:32:27.084Z,guentdy01,Dylan Guenther,https://www.hockey-reference.com/req/202301051/images/headshots/guentdy01.jpg,data\hockey_reference_headshots\guentdy01.jpg,missing,404,,not found
+2026-06-07T20:32:37.323Z,hollody01,Dylan Holloway,https://www.hockey-reference.com/req/202301051/images/headshots/hollody01.jpg,data\hockey_reference_headshots\hollody01.jpg,missing,404,,not found
+2026-06-07T20:32:47.575Z,larkidy01,Dylan Larkin,https://www.hockey-reference.com/req/202301051/images/headshots/larkidy01.jpg,data\hockey_reference_headshots\larkidy01.jpg,missing,404,,not found
+2026-06-07T20:32:57.815Z,sambedy01,Dylan Samberg,https://www.hockey-reference.com/req/202301051/images/headshots/sambedy01.jpg,data\hockey_reference_headshots\sambedy01.jpg,missing,404,,not found
+2026-06-07T20:33:08.050Z,stromdy01,Dylan Strome,https://www.hockey-reference.com/req/202301051/images/headshots/stromdy01.jpg,data\hockey_reference_headshots\stromdy01.jpg,missing,404,,not found
+2026-06-07T20:33:18.242Z,belfoed01,Ed Belfour,https://www.hockey-reference.com/req/202301051/images/headshots/belfoed01.jpg,data\hockey_reference_headshots\belfoed01.jpg,downloaded,200,3302,ok
+2026-06-07T20:33:28.407Z,giacoed01,Ed Giacomin,https://www.hockey-reference.com/req/202301051/images/headshots/giacoed01.jpg,data\hockey_reference_headshots\giacoed01.jpg,downloaded,200,3248,ok
+2026-06-07T20:33:38.543Z,jovaned01,Ed Jovanovski,https://www.hockey-reference.com/req/202301051/images/headshots/jovaned01.jpg,data\hockey_reference_headshots\jovaned01.jpg,downloaded,200,3350,ok
+2026-06-07T20:33:48.785Z,lacked01,Eddie Läck,https://www.hockey-reference.com/req/202301051/images/headshots/lacked01.jpg,data\hockey_reference_headshots\lacked01.jpg,downloaded,200,3082,ok
+2026-06-07T20:33:59.016Z,tolvaee01,Eeli Tolvanen,https://www.hockey-reference.com/req/202301051/images/headshots/tolvaee01.jpg,data\hockey_reference_headshots\tolvaee01.jpg,missing,404,,not found
+2026-06-07T20:34:09.252Z,lindhel01,Elias Lindholm,https://www.hockey-reference.com/req/202301051/images/headshots/lindhel01.jpg,data\hockey_reference_headshots\lindhel01.jpg,downloaded,200,3213,ok
+2026-06-07T20:34:19.467Z,petteel01,Elias Pettersson,https://www.hockey-reference.com/req/202301051/images/headshots/petteel01.jpg,data\hockey_reference_headshots\petteel01.jpg,missing,404,,not found
+2026-06-07T20:34:29.707Z,merzlel01,Elvis Merzļikins,https://www.hockey-reference.com/req/202301051/images/headshots/merzlel01.jpg,data\hockey_reference_headshots\merzlel01.jpg,missing,404,,not found
+2026-06-07T20:34:39.961Z,dazeer01,Éric Dazé,https://www.hockey-reference.com/req/202301051/images/headshots/dazeer01.jpg,data\hockey_reference_headshots\dazeer01.jpg,missing,404,,not found
+2026-06-07T20:34:50.166Z,desjaer01,Éric Desjardins,https://www.hockey-reference.com/req/202301051/images/headshots/desjaer01.jpg,data\hockey_reference_headshots\desjaer01.jpg,downloaded,200,5773,ok
+2026-06-07T20:35:00.410Z,fehrer01,Eric Fehr,https://www.hockey-reference.com/req/202301051/images/headshots/fehrer01.jpg,data\hockey_reference_headshots\fehrer01.jpg,downloaded,200,2908,ok
+2026-06-07T20:35:10.512Z,lindrer01,Eric Lindros,https://www.hockey-reference.com/req/202301051/images/headshots/lindrer01.jpg,data\hockey_reference_headshots\lindrer01.jpg,downloaded,200,3318,ok
+2026-06-07T20:35:20.747Z,staaler01,Eric Staal,https://www.hockey-reference.com/req/202301051/images/headshots/staaler01.jpg,data\hockey_reference_headshots\staaler01.jpg,downloaded,200,3124,ok
+2026-06-07T20:35:30.981Z,weinrer01,Eric Weinrich,https://www.hockey-reference.com/req/202301051/images/headshots/weinrer01.jpg,data\hockey_reference_headshots\weinrer01.jpg,missing,404,,not found
+2026-06-07T20:35:41.217Z,cernaer01,Erik Černák,https://www.hockey-reference.com/req/202301051/images/headshots/cernaer01.jpg,data\hockey_reference_headshots\cernaer01.jpg,missing,404,,not found
+2026-06-07T20:35:51.453Z,coleer01,Erik Cole,https://www.hockey-reference.com/req/202301051/images/headshots/coleer01.jpg,data\hockey_reference_headshots\coleer01.jpg,downloaded,200,3061,ok
+2026-06-07T20:36:01.693Z,gustaer02,Erik Gustafsson,https://www.hockey-reference.com/req/202301051/images/headshots/gustaer02.jpg,data\hockey_reference_headshots\gustaer02.jpg,missing,404,,not found
+2026-06-07T20:36:11.913Z,haulaer01,Erik Haula,https://www.hockey-reference.com/req/202301051/images/headshots/haulaer01.jpg,data\hockey_reference_headshots\haulaer01.jpg,downloaded,200,3111,ok
+2026-06-07T20:36:22.132Z,johnser01,Erik Johnson,https://www.hockey-reference.com/req/202301051/images/headshots/johnser01.jpg,data\hockey_reference_headshots\johnser01.jpg,downloaded,200,3301,ok
+2026-06-07T20:36:32.367Z,karlser01,Erik Karlsson,https://www.hockey-reference.com/req/202301051/images/headshots/karlser01.jpg,data\hockey_reference_headshots\karlser01.jpg,downloaded,200,3236,ok
+2026-06-07T20:36:42.608Z,lindees01,Esa Lindell,https://www.hockey-reference.com/req/202301051/images/headshots/lindees01.jpg,data\hockey_reference_headshots\lindees01.jpg,missing,404,,not found
+2026-06-07T20:36:52.839Z,bouchev01,Evan Bouchard,https://www.hockey-reference.com/req/202301051/images/headshots/bouchev01.jpg,data\hockey_reference_headshots\bouchev01.jpg,missing,404,,not found
+2026-06-07T20:37:03.081Z,rodriev01,Evan Rodrigues,https://www.hockey-reference.com/req/202301051/images/headshots/rodriev01.jpg,data\hockey_reference_headshots\rodriev01.jpg,missing,404,,not found
+2026-06-07T20:37:13.292Z,kaneev01,Evander Kane,https://www.hockey-reference.com/req/202301051/images/headshots/kaneev01.jpg,data\hockey_reference_headshots\kaneev01.jpg,downloaded,200,2930,ok
+2026-06-07T20:37:23.507Z,malkiev01,Evgeni Malkin,https://www.hockey-reference.com/req/202301051/images/headshots/malkiev01.jpg,data\hockey_reference_headshots\malkiev01.jpg,downloaded,200,3155,ok
+2026-06-07T20:37:33.753Z,nabokev01,Evgeni Nabokov,https://www.hockey-reference.com/req/202301051/images/headshots/nabokev01.jpg,data\hockey_reference_headshots\nabokev01.jpg,downloaded,200,3140,ok
+2026-06-07T20:37:44.234Z,dadonev01,Evgenii Dadonov,https://www.hockey-reference.com/req/202301051/images/headshots/dadonev01.jpg,data\hockey_reference_headshots\dadonev01.jpg,missing,404,,not found
+2026-06-07T20:37:54.472Z,kuzneev01,Evgeny Kuznetsov,https://www.hockey-reference.com/req/202301051/images/headshots/kuzneev01.jpg,data\hockey_reference_headshots\kuzneev01.jpg,missing,404,,not found
+2026-06-07T20:38:04.694Z,tyutife01,Fedor Tyutin,https://www.hockey-reference.com/req/202301051/images/headshots/tyutife01.jpg,data\hockey_reference_headshots\tyutife01.jpg,downloaded,200,3182,ok
+2026-06-07T20:38:14.816Z,potvife01,Félix Potvin,https://www.hockey-reference.com/req/202301051/images/headshots/potvife01.jpg,data\hockey_reference_headshots\potvife01.jpg,downloaded,200,4205,ok
+2026-06-07T20:38:25.033Z,forsbfi01,Filip Forsberg,https://www.hockey-reference.com/req/202301051/images/headshots/forsbfi01.jpg,data\hockey_reference_headshots\forsbfi01.jpg,downloaded,200,3130,ok
+2026-06-07T20:38:35.263Z,gustafi01,Filip Gustavsson,https://www.hockey-reference.com/req/202301051/images/headshots/gustafi01.jpg,data\hockey_reference_headshots\gustafi01.jpg,missing,404,,not found
+2026-06-07T20:38:45.501Z,hronefi01,Filip Hronek,https://www.hockey-reference.com/req/202301051/images/headshots/hronefi01.jpg,data\hockey_reference_headshots\hronefi01.jpg,missing,404,,not found
+2026-06-07T20:38:55.734Z,kubafi01,Filip Kuba,https://www.hockey-reference.com/req/202301051/images/headshots/kubafi01.jpg,data\hockey_reference_headshots\kubafi01.jpg,missing,404,,not found
+2026-06-07T20:39:06.240Z,beaucfr01,François Beauchemin,https://www.hockey-reference.com/req/202301051/images/headshots/beaucfr01.jpg,data\hockey_reference_headshots\beaucfr01.jpg,downloaded,200,2852,ok
+2026-06-07T20:39:16.369Z,mahovfr01,Frank Mahovlich,https://www.hockey-reference.com/req/202301051/images/headshots/mahovfr01.jpg,data\hockey_reference_headshots\mahovfr01.jpg,downloaded,200,2849,ok
+2026-06-07T20:39:26.615Z,vatrafr01,Frank Vatrano,https://www.hockey-reference.com/req/202301051/images/headshots/vatrafr01.jpg,data\hockey_reference_headshots\vatrafr01.jpg,missing,404,,not found
+2026-06-07T20:39:36.843Z,nielsfr01,Frans Nielsen,https://www.hockey-reference.com/req/202301051/images/headshots/nielsfr01.jpg,data\hockey_reference_headshots\nielsfr01.jpg,downloaded,200,3140,ok
+2026-06-07T20:39:47.075Z,kaberfr01,František Kaberle,https://www.hockey-reference.com/req/202301051/images/headshots/kaberfr01.jpg,data\hockey_reference_headshots\kaberfr01.jpg,missing,404,,not found
+2026-06-07T20:39:57.319Z,brathfr01,Fred Brathwaite,https://www.hockey-reference.com/req/202301051/images/headshots/brathfr01.jpg,data\hockey_reference_headshots\brathfr01.jpg,missing,404,,not found
+2026-06-07T20:40:07.539Z,gaudrfr01,Frédérick Gaudreau,https://www.hockey-reference.com/req/202301051/images/headshots/gaudrfr01.jpg,data\hockey_reference_headshots\gaudrfr01.jpg,missing,404,,not found
+2026-06-07T20:40:17.770Z,anderfr01,Frederik Andersen,https://www.hockey-reference.com/req/202301051/images/headshots/anderfr01.jpg,data\hockey_reference_headshots\anderfr01.jpg,downloaded,200,3058,ok
+2026-06-07T20:40:28.012Z,modinfr01,Fredrik Modin,https://www.hockey-reference.com/req/202301051/images/headshots/modinfr01.jpg,data\hockey_reference_headshots\modinfr01.jpg,missing,404,,not found
+2026-06-07T20:40:38.244Z,norrefr01,Fredrik Norrena,https://www.hockey-reference.com/req/202301051/images/headshots/norrefr01.jpg,data\hockey_reference_headshots\norrefr01.jpg,missing,404,,not found
+2026-06-07T20:40:48.481Z,olausfr01,Fredrik Olausson,https://www.hockey-reference.com/req/202301051/images/headshots/olausfr01.jpg,data\hockey_reference_headshots\olausfr01.jpg,missing,404,,not found
+2026-06-07T20:40:58.720Z,landega01,Gabriel Landeskog,https://www.hockey-reference.com/req/202301051/images/headshots/landega01.jpg,data\hockey_reference_headshots\landega01.jpg,downloaded,200,3386,ok
+2026-06-07T20:41:08.945Z,vilarga01,Gabriel Vilardi,https://www.hockey-reference.com/req/202301051/images/headshots/vilarga01.jpg,data\hockey_reference_headshots\vilarga01.jpg,missing,404,,not found
+2026-06-07T20:41:19.177Z,gallega01,Garry Galley,https://www.hockey-reference.com/req/202301051/images/headshots/gallega01.jpg,data\hockey_reference_headshots\gallega01.jpg,missing,404,,not found
+2026-06-07T20:41:29.435Z,snowga01,Garth Snow,https://www.hockey-reference.com/req/202301051/images/headshots/snowga01.jpg,data\hockey_reference_headshots\snowga01.jpg,missing,404,,not found
+2026-06-07T20:41:39.673Z,leemaga01,Gary Leeman,https://www.hockey-reference.com/req/202301051/images/headshots/leemaga01.jpg,data\hockey_reference_headshots\leemaga01.jpg,missing,404,,not found
+2026-06-07T20:41:49.838Z,roberga01,Gary Roberts,https://www.hockey-reference.com/req/202301051/images/headshots/roberga01.jpg,data\hockey_reference_headshots\roberga01.jpg,downloaded,200,4687,ok
+2026-06-07T20:42:00.075Z,smithga01,Gary Smith,https://www.hockey-reference.com/req/202301051/images/headshots/smithga01.jpg,data\hockey_reference_headshots\smithga01.jpg,missing,404,,not found
+2026-06-07T20:42:10.194Z,suterga01,Gary Suter,https://www.hockey-reference.com/req/202301051/images/headshots/suterga01.jpg,data\hockey_reference_headshots\suterga01.jpg,downloaded,200,7350,ok
+2026-06-07T20:42:20.449Z,courtge01,Geoff Courtnall,https://www.hockey-reference.com/req/202301051/images/headshots/courtge01.jpg,data\hockey_reference_headshots\courtge01.jpg,missing,404,,not found
+2026-06-07T20:42:30.669Z,sandege01,Geoff Sanderson,https://www.hockey-reference.com/req/202301051/images/headshots/sandege01.jpg,data\hockey_reference_headshots\sandege01.jpg,missing,404,,not found
+2026-06-07T20:42:40.896Z,desjage01,Gerry Desjardins,https://www.hockey-reference.com/req/202301051/images/headshots/desjage01.jpg,data\hockey_reference_headshots\desjage01.jpg,missing,404,,not found
+2026-06-07T20:42:50.996Z,perregi01,Gilbert Perreault,https://www.hockey-reference.com/req/202301051/images/headshots/perregi01.jpg,data\hockey_reference_headshots\perregi01.jpg,downloaded,200,3874,ok
+2026-06-07T20:43:01.190Z,melocgi01,Gilles Meloche,https://www.hockey-reference.com/req/202301051/images/headshots/melocgi01.jpg,data\hockey_reference_headshots\melocgi01.jpg,downloaded,200,5279,ok
+2026-06-07T20:43:11.455Z,hanlogl01,Glen Hanlon,https://www.hockey-reference.com/req/202301051/images/headshots/hanlogl01.jpg,data\hockey_reference_headshots\hanlogl01.jpg,missing,404,,not found
+2026-06-07T20:43:21.670Z,murragl01,Glen Murray,https://www.hockey-reference.com/req/202301051/images/headshots/murragl01.jpg,data\hockey_reference_headshots\murragl01.jpg,missing,404,,not found
+2026-06-07T20:43:31.847Z,weslegl01,Glen Wesley,https://www.hockey-reference.com/req/202301051/images/headshots/weslegl01.jpg,data\hockey_reference_headshots\weslegl01.jpg,downloaded,200,7470,ok
+2026-06-07T20:43:41.960Z,andergl01,Glenn Anderson,https://www.hockey-reference.com/req/202301051/images/headshots/andergl01.jpg,data\hockey_reference_headshots\andergl01.jpg,downloaded,200,3581,ok
+2026-06-07T20:43:52.137Z,hallgl01,Glenn Hall,https://www.hockey-reference.com/req/202301051/images/headshots/hallgl01.jpg,data\hockey_reference_headshots\hallgl01.jpg,downloaded,200,3471,ok
+2026-06-07T20:44:02.379Z,healygl01,Glenn Healy,https://www.hockey-reference.com/req/202301051/images/headshots/healygl01.jpg,data\hockey_reference_headshots\healygl01.jpg,missing,404,,not found
+2026-06-07T20:44:12.532Z,reschgl01,Glenn Resch,https://www.hockey-reference.com/req/202301051/images/headshots/reschgl01.jpg,data\hockey_reference_headshots\reschgl01.jpg,downloaded,200,7410,ok
+2026-06-07T20:44:22.690Z,murphgo01,Gord Murphy,https://www.hockey-reference.com/req/202301051/images/headshots/murphgo01.jpg,data\hockey_reference_headshots\murphgo01.jpg,downloaded,200,4603,ok
+2026-06-07T20:44:32.805Z,howego01,Gordie Howe,https://www.hockey-reference.com/req/202301051/images/headshots/howego01.jpg,data\hockey_reference_headshots\howego01.jpg,downloaded,200,3035,ok
+2026-06-07T20:44:42.959Z,fuhrgr01,Grant Fuhr,https://www.hockey-reference.com/req/202301051/images/headshots/fuhrgr01.jpg,data\hockey_reference_headshots\fuhrgr01.jpg,downloaded,200,3643,ok
+2026-06-07T20:44:53.199Z,devrigr01,Greg de Vries,https://www.hockey-reference.com/req/202301051/images/headshots/devrigr01.jpg,data\hockey_reference_headshots\devrigr01.jpg,missing,404,,not found
+2026-06-07T20:45:03.462Z,millegr01,Greg Millen,https://www.hockey-reference.com/req/202301051/images/headshots/millegr01.jpg,data\hockey_reference_headshots\millegr01.jpg,missing,404,,not found
+2026-06-07T20:45:13.714Z,forslgu02,Gustav Forsling,https://www.hockey-reference.com/req/202301051/images/headshots/forslgu02.jpg,data\hockey_reference_headshots\forslgu02.jpg,missing,404,,not found
+2026-06-07T20:45:23.928Z,nyquigu01,Gustav Nyquist,https://www.hockey-reference.com/req/202301051/images/headshots/nyquigu01.jpg,data\hockey_reference_headshots\nyquigu01.jpg,downloaded,200,2871,ok
+2026-06-07T20:45:34.062Z,hebergu01,Guy Hebert,https://www.hockey-reference.com/req/202301051/images/headshots/hebergu01.jpg,data\hockey_reference_headshots\hebergu01.jpg,downloaded,200,4504,ok
+2026-06-07T20:45:44.178Z,laflegu01,Guy Lafleur,https://www.hockey-reference.com/req/202301051/images/headshots/laflegu01.jpg,data\hockey_reference_headshots\laflegu01.jpg,downloaded,200,3807,ok
+2026-06-07T20:45:54.286Z,lapoigu01,Guy Lapointe,https://www.hockey-reference.com/req/202301051/images/headshots/lapoigu01.jpg,data\hockey_reference_headshots\lapoigu01.jpg,downloaded,200,3451,ok
+2026-06-07T20:46:04.509Z,loobha01,Håkan Loob,https://www.hockey-reference.com/req/202301051/images/headshots/loobha01.jpg,data\hockey_reference_headshots\loobha01.jpg,missing,404,,not found
+2026-06-07T20:46:14.730Z,lindhha01,Hampus Lindholm,https://www.hockey-reference.com/req/202301051/images/headshots/lindhha01.jpg,data\hockey_reference_headshots\lindhha01.jpg,downloaded,200,3046,ok
+2026-06-07T20:46:24.920Z,lumleha01,Harry Lumley,https://www.hockey-reference.com/req/202301051/images/headshots/lumleha01.jpg,data\hockey_reference_headshots\lumleha01.jpg,downloaded,200,3044,ok
+2026-06-07T20:46:35.153Z,lundqhe01,Henrik Lundqvist,https://www.hockey-reference.com/req/202301051/images/headshots/lundqhe01.jpg,data\hockey_reference_headshots\lundqhe01.jpg,downloaded,200,3399,ok
+2026-06-07T20:46:45.410Z,sedinhe01,Henrik Sedin,https://www.hockey-reference.com/req/202301051/images/headshots/sedinhe01.jpg,data\hockey_reference_headshots\sedinhe01.jpg,downloaded,200,2926,ok
+2026-06-07T20:46:55.615Z,tallihe01,Henrik Tallinder,https://www.hockey-reference.com/req/202301051/images/headshots/tallihe01.jpg,data\hockey_reference_headshots\tallihe01.jpg,downloaded,200,2880,ok
+2026-06-07T20:47:05.853Z,zettehe01,Henrik Zetterberg,https://www.hockey-reference.com/req/202301051/images/headshots/zettehe01.jpg,data\hockey_reference_headshots\zettehe01.jpg,downloaded,200,3010,ok
+2026-06-07T20:47:16.083Z,coleia01,Ian Cole,https://www.hockey-reference.com/req/202301051/images/headshots/coleia01.jpg,data\hockey_reference_headshots\coleia01.jpg,downloaded,200,3481,ok
+2026-06-07T20:47:26.348Z,turnbia01,Ian Turnbull,https://www.hockey-reference.com/req/202301051/images/headshots/turnbia01.jpg,data\hockey_reference_headshots\turnbia01.jpg,missing,404,,not found
+2026-06-07T20:47:36.584Z,whiteia01,Ian White,https://www.hockey-reference.com/req/202301051/images/headshots/whiteia01.jpg,data\hockey_reference_headshots\whiteia01.jpg,missing,404,,not found
+2026-06-07T20:47:46.805Z,shestig01,Igor Shesterkin,https://www.hockey-reference.com/req/202301051/images/headshots/shestig01.jpg,data\hockey_reference_headshots\shestig01.jpg,missing,404,,not found
+2026-06-07T20:47:56.958Z,bryzgil01,Ilya Bryzgalov,https://www.hockey-reference.com/req/202301051/images/headshots/bryzgil01.jpg,data\hockey_reference_headshots\bryzgil01.jpg,downloaded,200,3003,ok
+2026-06-07T20:48:07.184Z,kovalil01,Ilya Kovalchuk,https://www.hockey-reference.com/req/202301051/images/headshots/kovalil01.jpg,data\hockey_reference_headshots\kovalil01.jpg,downloaded,200,6609,ok
+2026-06-07T20:48:17.390Z,samsoil01,Ilya Samsonov,https://www.hockey-reference.com/req/202301051/images/headshots/samsoil01.jpg,data\hockey_reference_headshots\samsoil01.jpg,missing,404,,not found
+2026-06-07T20:48:27.631Z,sorokil01,Ilya Sorokin,https://www.hockey-reference.com/req/202301051/images/headshots/sorokil01.jpg,data\hockey_reference_headshots\sorokil01.jpg,missing,404,,not found
+2026-06-07T20:48:37.876Z,barbaiv01,Ivan Barbashev,https://www.hockey-reference.com/req/202301051/images/headshots/barbaiv01.jpg,data\hockey_reference_headshots\barbaiv01.jpg,missing,404,,not found
+2026-06-07T20:48:48.098Z,demidiv01,Ivan Demidov,https://www.hockey-reference.com/req/202301051/images/headshots/demidiv01.jpg,data\hockey_reference_headshots\demidiv01.jpg,missing,404,,not found
+2026-06-07T20:48:58.334Z,provoiv01,Ivan Provorov,https://www.hockey-reference.com/req/202301051/images/headshots/provoiv01.jpg,data\hockey_reference_headshots\provoiv01.jpg,missing,404,,not found
+2026-06-07T20:49:08.557Z,trembjc01,J.C. Tremblay,https://www.hockey-reference.com/req/202301051/images/headshots/trembjc01.jpg,data\hockey_reference_headshots\trembjc01.jpg,missing,404,,not found
+2026-06-07T20:49:18.763Z,moserja01,J.J. Moser,https://www.hockey-reference.com/req/202301051/images/headshots/moserja01.jpg,data\hockey_reference_headshots\moserja01.jpg,missing,404,,not found
+2026-06-07T20:49:28.971Z,dumonjp01,J.P. Dumont,https://www.hockey-reference.com/req/202301051/images/headshots/dumonjp01.jpg,data\hockey_reference_headshots\dumonjp01.jpg,missing,404,,not found
+2026-06-07T20:49:39.199Z,millejt01,J.T. Miller,https://www.hockey-reference.com/req/202301051/images/headshots/millejt01.jpg,data\hockey_reference_headshots\millejt01.jpg,downloaded,200,3430,ok

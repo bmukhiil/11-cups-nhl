@@ -1,0 +1,67 @@
+team,team_name,franchise_key,franchise_name,current_team,franchise_status
+AFM,Atlanta Flames,CGY,Calgary Flames,CGY,active
+ANA,Anaheim Ducks,ANA,Anaheim Ducks,ANA,active
+ARI,Arizona Coyotes,UTA,Utah Hockey Club,UTA,active_relocated
+ATL,Atlanta Thrashers,WPG,Winnipeg Jets,WPG,active_relocated
+ATF,Atlanta Flames,CGY,Calgary Flames,CGY,active_relocated
+BOS,Boston Bruins,BOS,Boston Bruins,BOS,active
+BRK,Brooklyn Americans,NYR,New York Rangers,NYR,defunct_gameplay_mapped
+BUF,Buffalo Sabres,BUF,Buffalo Sabres,BUF,active
+CAR,Carolina Hurricanes,CAR,Carolina Hurricanes,CAR,active
+CBJ,Columbus Blue Jackets,CBJ,Columbus Blue Jackets,CBJ,active
+CGS,California Golden Seals,DAL,Dallas Stars,DAL,merged
+CGY,Calgary Flames,CGY,Calgary Flames,CGY,active
+CHI,Chicago Blackhawks,CHI,Chicago Blackhawks,CHI,active
+CBH,Chicago Black Hawks,CHI,Chicago Blackhawks,CHI,active_renamed
+CLE,Cleveland Barons,DAL,Dallas Stars,DAL,merged
+CLR,Colorado Rockies,NJD,New Jersey Devils,NJD,active_relocated
+COL,Colorado Avalanche,COL,Colorado Avalanche,COL,active
+DAL,Dallas Stars,DAL,Dallas Stars,DAL,active
+DCG,Detroit Cougars,DET,Detroit Red Wings,DET,active_renamed
+DTC,Detroit Cougars,DET,Detroit Red Wings,DET,active_renamed
+DET,Detroit Red Wings,DET,Detroit Red Wings,DET,active
+DFL,Detroit Falcons,DET,Detroit Red Wings,DET,active_renamed
+DTF,Detroit Falcons,DET,Detroit Red Wings,DET,active_renamed
+EDM,Edmonton Oilers,EDM,Edmonton Oilers,EDM,active
+FLA,Florida Panthers,FLA,Florida Panthers,FLA,active
+HFD,Hartford Whalers,CAR,Carolina Hurricanes,CAR,active_relocated
+HAR,Hartford Whalers,CAR,Carolina Hurricanes,CAR,active_relocated
+KCS,Kansas City Scouts,NJD,New Jersey Devils,NJD,active_relocated
+LAK,Los Angeles Kings,LAK,Los Angeles Kings,LAK,active
+MDA,Mighty Ducks of Anaheim,ANA,Anaheim Ducks,ANA,active_renamed
+MIN,Minnesota Wild,MIN,Minnesota Wild,MIN,active
+MMR,Montreal Maroons,MTL,Montreal Canadiens,MTL,defunct_gameplay_mapped
+MTM,Montreal Maroons,MTL,Montreal Canadiens,MTL,defunct_gameplay_mapped
+MNS,Minnesota North Stars,DAL,Dallas Stars,DAL,active_relocated
+MTL,Montreal Canadiens,MTL,Montreal Canadiens,MTL,active
+NJD,New Jersey Devils,NJD,New Jersey Devils,NJD,active
+NSH,Nashville Predators,NSH,Nashville Predators,NSH,active
+NYA,New York Americans,NYR,New York Rangers,NYR,defunct_gameplay_mapped
+NYI,New York Islanders,NYI,New York Islanders,NYI,active
+NYR,New York Rangers,NYR,New York Rangers,NYR,active
+OAK,Oakland Seals,DAL,Dallas Stars,DAL,merged
+OTT,Ottawa Senators,OTT,Ottawa Senators,OTT,active
+OTS,Ottawa Senators (original),OTT,Ottawa Senators,OTT,defunct_gameplay_mapped
+PHI,Philadelphia Flyers,PHI,Philadelphia Flyers,PHI,active
+PHX,Phoenix Coyotes,UTA,Utah Hockey Club,UTA,active_relocated
+PIR,Pittsburgh Pirates,PIT,Pittsburgh Penguins,PIT,defunct_gameplay_mapped
+PTP,Pittsburgh Pirates,PIT,Pittsburgh Penguins,PIT,defunct_gameplay_mapped
+PIT,Pittsburgh Penguins,PIT,Pittsburgh Penguins,PIT,active
+QUA,Philadelphia Quakers,PHI,Philadelphia Flyers,PHI,defunct_gameplay_mapped
+QUE,Quebec Nordiques,COL,Colorado Avalanche,COL,active_relocated
+SEA,Seattle Kraken,SEA,Seattle Kraken,SEA,active
+SEN,Ottawa Senators (original),OTT,Ottawa Senators,OTT,defunct_gameplay_mapped
+SJS,San Jose Sharks,SJS,San Jose Sharks,SJS,active
+SLE,St. Louis Eagles,STL,St. Louis Blues,STL,defunct_gameplay_mapped
+STE,St. Louis Eagles,STL,St. Louis Blues,STL,defunct_gameplay_mapped
+STL,St. Louis Blues,STL,St. Louis Blues,STL,active
+TBL,Tampa Bay Lightning,TBL,Tampa Bay Lightning,TBL,active
+TOR,Toronto Maple Leafs,TOR,Toronto Maple Leafs,TOR,active
+TSP,Toronto St. Patricks,TOR,Toronto Maple Leafs,TOR,active_renamed
+UTA,Utah Hockey Club,UTA,Utah Hockey Club,UTA,active
+VAN,Vancouver Canucks,VAN,Vancouver Canucks,VAN,active
+VEG,Vegas Golden Knights,VGK,Vegas Golden Knights,VGK,active
+VGK,Vegas Golden Knights,VGK,Vegas Golden Knights,VGK,active
+WIN,Winnipeg Jets (original),UTA,Utah Hockey Club,UTA,active_relocated
+WPG,Winnipeg Jets,WPG,Winnipeg Jets,WPG,active
+WSH,Washington Capitals,WSH,Washington Capitals,WSH,active
