@@ -503,6 +503,8 @@ body.sheet-locked {
   text-align: left;
   cursor: pointer;
   overflow: hidden;
+  /* Contain the headshot's z-index so it can't composite over the sheet */
+  isolation: isolate;
   transition: border-color 120ms ease, background 120ms ease;
 }
 
@@ -824,29 +826,32 @@ body.sheet-locked {
 }
 
 /* =================================================================
-   Position modal
+   Position picker (inline sub-view of the wild-card sheet)
    ================================================================= */
-.position-menu {
-  position: fixed;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  padding: 16px;
-  background: rgba(5, 5, 6, 0.7);
-  backdrop-filter: blur(6px);
+.position-picker {
+  gap: 10px;
 }
 
-.position-card {
-  width: min(340px, 100%);
-  padding: 20px;
-  border: 1px solid var(--line-hi);
-  border-radius: var(--r-lg);
-  background: var(--panel);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
+.picker-back {
+  justify-self: start;
+  padding: 4px 0;
+  border: 0;
+  background: none;
+  color: var(--fg-2);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-.position-card h2 {
-  margin-bottom: 16px;
+.picker-back:hover {
+  color: var(--fg);
+}
+
+.picker-note {
+  margin: 0;
+  color: var(--fg-2);
+  font-size: 13px;
+  line-height: 1.45;
 }
 
 .position-actions {

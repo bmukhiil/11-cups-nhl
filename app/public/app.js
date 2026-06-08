@@ -22,6 +22,8 @@ const els = {
   rosterPanel: document.querySelector(".roster-panel"),
   lifelineRow: document.querySelector(".lifeline-row"),
   backdrop: document.querySelector("#sheet-backdrop"),
+  positionPicker: document.querySelector("#position-picker"),
+  positionActions: document.querySelector("#position-picker .position-actions"),
 };
 
 // Mobile bottom-sheet controller. Roster + wild cards share one backdrop;
@@ -43,6 +45,7 @@ function closeSheet() {
   openSheetEl = null;
   els.backdrop.classList.remove("is-visible");
   document.body.classList.remove("sheet-locked");
+  closePositionPicker();
 }
 
 // Wild cards: [type, short label, what it does]. Each is usable once per draft.
@@ -399,31 +402,25 @@ async function selectCard(cardId) {
   render();
 }
 
-function openPositionMenu() {
-  const menu = document.createElement("div");
-  menu.className = "position-menu";
-  menu.innerHTML = `
-    <div class="position-card">
-      <p class="eyebrow">Choose position</p>
-      <h2>Same team board</h2>
-      <div class="position-actions">
-        ${["C", "W", "D", "G"].map((slot) => `<button class="position-button" data-slot="${slot}">${slot}</button>`).join("")}
-      </div>
-    </div>
-  `;
-  menu.addEventListener("click", async (event) => {
-    if (event.target === menu) menu.remove();
-    const slot = event.target.dataset?.slot;
-    if (!slot) return;
-    menu.remove();
-    await useLifeline("same_team_choose_position", slot);
-  });
-  document.body.appendChild(menu);
+// Inline position picker shown *inside* the wild-card sheet (not a floating modal).
+function openPositionPicker() {
+  const roster = state.draft?.roster || { C: [], W: [], D: [], G: [] };
+  els.positionActions.innerHTML = ["C", "W", "D", "G"].map((slot) => {
+    const full = roster[slot].length >= slotLimit(slot);
+    return `<button class="position-button" type="button" data-slot="${slot}"${full ? " disabled" : ""}>${slot}</button>`;
+  }).join("");
+  els.lifelines.style.display = "none";
+  els.positionPicker.style.display = "grid";
+}
+
+function closePositionPicker() {
+  els.positionPicker.style.display = "none";
+  els.lifelines.style.display = "";
 }
 
 async function useLifeline(type, position = null) {
   if (type === "same_team_choose_position" && !position) {
-    openPositionMenu();
+    openPositionPicker();
     return;
   }
   const payload = await api("/api/draft/lifeline", {
@@ -478,8 +475,18 @@ function openHelp() {
 
 els.helpBtn.addEventListener("click", openHelp);
 els.openRosterBtn.addEventListener("click", () => openSheet(els.rosterPanel));
-els.openWildBtn.addEventListener("click", () => openSheet(els.lifelineRow));
+els.openWildBtn.addEventListener("click", () => {
+  closePositionPicker();
+  openSheet(els.lifelineRow);
+});
 els.backdrop.addEventListener("click", closeSheet);
+els.positionPicker.querySelector("[data-picker-back]").addEventListener("click", closePositionPicker);
+els.positionActions.addEventListener("click", async (event) => {
+  const button = event.target.closest("[data-slot]");
+  if (!button || button.disabled) return;
+  await useLifeline("same_team_choose_position", button.dataset.slot);
+  closePositionPicker();
+});
 for (const button of document.querySelectorAll("[data-close-sheet]")) {
   button.addEventListener("click", closeSheet);
 }
