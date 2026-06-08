@@ -61,7 +61,7 @@ test("production rate limiting fails closed without upstash", () => {
     UPSTASH_REDIS_REST_URL: undefined,
     UPSTASH_REDIS_REST_TOKEN: undefined,
   }, () => {
-    assert.throws(() => assertRateLimitConfigured(), /must use vercel or upstash/);
+    assert.throws(() => assertRateLimitConfigured(), /must use firewall, vercel, or upstash/);
   });
 });
 
@@ -84,6 +84,21 @@ test("production vercel mode does not require redis config", () => {
     UPSTASH_REDIS_REST_TOKEN: undefined,
   }, () => {
     assert.doesNotThrow(() => assertRateLimitConfigured());
+  });
+});
+
+test("production firewall mode delegates limits to Vercel edge rules", async () => {
+  await withEnv({
+    NODE_ENV: "production",
+    RATE_LIMIT_PROVIDER: "firewall",
+    UPSTASH_REDIS_REST_URL: undefined,
+    UPSTASH_REDIS_REST_TOKEN: undefined,
+  }, async () => {
+    assert.doesNotThrow(() => assertRateLimitConfigured());
+    assert.deepEqual(
+      await checkRateLimit({ key: "ip-a", route: "start" }),
+      { allowed: true, provider: "firewall" },
+    );
   });
 });
 
