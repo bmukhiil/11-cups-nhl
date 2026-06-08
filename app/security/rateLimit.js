@@ -20,8 +20,8 @@ function provider() {
 
 function assertRateLimitConfigured() {
   const selected = provider();
-  if (process.env.NODE_ENV === "production" && !["firewall", "upstash", "vercel"].includes(selected)) {
-    throw new Error("Production rate limiting must use firewall, vercel, or upstash");
+  if (process.env.NODE_ENV === "production" && !["firewall", "memory", "upstash", "vercel"].includes(selected)) {
+    throw new Error("Production rate limiting must use firewall, memory, vercel, or upstash");
   }
   if (selected === "upstash" && (!process.env.UPSTASH_REDIS_REST_URL || !process.env.UPSTASH_REDIS_REST_TOKEN)) {
     throw new Error("Upstash rate limiting is not configured");

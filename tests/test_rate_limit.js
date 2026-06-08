@@ -61,7 +61,7 @@ test("production rate limiting fails closed without upstash", () => {
     UPSTASH_REDIS_REST_URL: undefined,
     UPSTASH_REDIS_REST_TOKEN: undefined,
   }, () => {
-    assert.throws(() => assertRateLimitConfigured(), /must use firewall, vercel, or upstash/);
+    assert.throws(() => assertRateLimitConfigured(), /must use firewall, memory, vercel, or upstash/);
   });
 });
 
@@ -99,6 +99,17 @@ test("production firewall mode delegates limits to Vercel edge rules", async () 
       await checkRateLimit({ key: "ip-a", route: "start" }),
       { allowed: true, provider: "firewall" },
     );
+  });
+});
+
+test("production memory mode is allowed as a free-tier fallback", async () => {
+  resetMemoryRateLimit();
+  await withEnv({
+    NODE_ENV: "production",
+    RATE_LIMIT_PROVIDER: "memory",
+  }, async () => {
+    assert.doesNotThrow(() => assertRateLimitConfigured());
+    assert.equal((await checkRateLimit({ key: "ip-a", route: "select", now: 1000 })).allowed, true);
   });
 });
 
