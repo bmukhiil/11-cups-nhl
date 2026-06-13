@@ -1,37 +1,39 @@
 # 11 Cups NHL
 
-## Overview
+## What This Is
 
-11 Cups NHL is a browser-based NHL roster drafting game. The core loop asks a simple question: can you build a seven-player roster strong enough to win six Stanley Cups in the modern era benchmark set by Ken Dryden?
+11 Cups NHL is a browser-based draft game built around a single benchmark: can you draft a 7-player roster strong enough to match Ken Dryden's six Stanley Cups? The repo includes the game UI, the draft/scoring engine, stateless API handling, and the data pipelines that build franchise boards from historical NHL data.
 
-The app serves franchise-specific player boards, lets the user draft across positions, applies roster fit and chemistry logic, and reveals a final score and rings result at the end of the run.
+## What Works
 
-## Stack
+- Start a new draft run from the browser UI
+- Generate a 10-card franchise board for each pick
+- Enforce roster constraints across `C`, `W`, `D`, and `G`
+- Apply position-fit penalties and handedness chemistry bonuses
+- Use wild-card mechanics to reshuffle or force position-specific picks
+- Reveal a final score, ring count, and percentile once the roster is complete
+- Build the underlying card pool and player assets from local data scripts
 
-- Node.js 20+
-- Vanilla HTML, CSS, and client-side JavaScript
-- Custom HTTP server
-- CSV and JSON data pipelines
-- Hockey-Reference and NHL asset integrations
-- Vercel-compatible deployment flow
+## How It's Built
 
-## What I Built
+- Browser client in plain HTML/CSS/JavaScript
+- Draft and scoring logic in [app/gameEngine.js](./app/gameEngine.js)
+- Stateless token-based draft flow in [app/statelessApi.js](./app/statelessApi.js)
+- Rate limiting and draft-token signing under [app/security](./app/security)
+- Historical card pool and asset generation from local scripts and JSON/CSV datasets
 
-- A stateless draft flow with rate-limited API endpoints
-- Franchise board generation from historical player datasets
-- Position-fit and handedness chemistry scoring
-- Wild-card / lifeline mechanics to reshape a draft run
-- Mobile-friendly roster and board UI
-- Data build scripts for player values, board pools, windows, and headshots
-- Automated tests covering the draft engine, stateless API flow, and data shaping logic
+## Technical Notes
 
-## Why I Built It
+- The game is not a static quiz. Each board is assembled from historical player data with bucketed board composition rules so runs feel varied while still preserving roster-building tension.
+- The public scoring model goes beyond raw player quality by adjusting for slot fit and small chemistry effects instead of treating the roster as seven independent picks.
+- The API flow is designed to be stateless: draft state is signed and passed through tokens rather than depending on a long-lived server session.
 
-I wanted a sports product that felt more like a playable systems design project than a static stats page. The interesting part was combining historical hockey data, game mechanics, and lightweight backend logic into something fast enough to run as a simple web app.
+## Proof of Work
 
-## Outcome
-
-The project became a complete draft game with its own data pipeline, scoring model, deploy path, and test coverage. It is a good proof-of-work example for product thinking, backend logic, and turning messy domain data into an interactive experience.
+- Browser game shell and draft UI in [app/public/index.html](./app/public/index.html) and [app/public/app.js](./app/public/app.js)
+- Draft rules, lifelines, thresholds, and roster-fit logic in [app/gameEngine.js](./app/gameEngine.js)
+- Stateless signed-draft handling in [app/statelessApi.js](./app/statelessApi.js)
+- Historical player headshots and generated card data checked into the repo for the playable experience
 
 ## Run Locally
 
