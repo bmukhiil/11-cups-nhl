@@ -4,6 +4,16 @@
 
 11 Cups NHL is a browser-based draft game built around a single benchmark: can you draft a 7-player roster strong enough to match Ken Dryden's six Stanley Cups? The repo includes the game UI, the draft/scoring engine, stateless API handling, and the data pipelines that build franchise boards from historical NHL data.
 
+Live demo: [6-cups-nhl.vercel.app](https://6-cups-nhl.vercel.app/)
+
+## Preview
+
+![11 Cups home](./docs/assets/11-cups-home.png)
+
+![11 Cups draft board](./docs/assets/11-cups-board.png)
+
+![11 Cups after first pick](./docs/assets/11-cups-after-pick.png)
+
 ## What Works
 
 - Start a new draft run from the browser UI
@@ -30,6 +40,8 @@
 
 ## Proof of Work
 
+- Live deployment: [6-cups-nhl.vercel.app](https://6-cups-nhl.vercel.app/)
+- Captured app screenshots in [docs/assets](./docs/assets)
 - Browser game shell and draft UI in [app/public/index.html](./app/public/index.html) and [app/public/app.js](./app/public/app.js)
 - Draft rules, lifelines, thresholds, and roster-fit logic in [app/gameEngine.js](./app/gameEngine.js)
 - Stateless signed-draft handling in [app/statelessApi.js](./app/statelessApi.js)
