@@ -188,15 +188,15 @@ function disabledReasonForCard(card, state) {
   return null;
 }
 
-function randomInt(max) {
-  return crypto.randomInt(0, max);
+function seededRandom(seed) {
+  let draw = 0;
+  return (max) => {
+    const hash = crypto.createHash("sha256").update(`${seed}:${draw++}`).digest();
+    return Math.floor(hash.readUInt32BE(0) / 0x100000000 * max);
+  };
 }
 
-function randomBetween(min, max) {
-  return min + randomInt(max - min + 1);
-}
-
-function sampleCards(cards, size) {
+function sampleCards(cards, size, randomInt) {
   const pool = [...cards];
   const selected = [];
   while (pool.length > 0 && selected.length < size) {
@@ -207,8 +207,8 @@ function sampleCards(cards, size) {
   return selected;
 }
 
-function shuffleCards(cards) {
-  const output = [...cards];
+function shuffle(items, randomInt) {
+  const output = [...items];
   for (let index = output.length - 1; index > 0; index -= 1) {
     const swapIndex = randomInt(index + 1);
     [output[index], output[swapIndex]] = [output[swapIndex], output[index]];
@@ -231,7 +231,7 @@ function quantile(values, percentile) {
   return sorted[lower] * (1 - weight) + sorted[upper] * weight;
 }
 
-function boardComposition(size = BOARD_SIZE) {
+function boardComposition(size, randomInt) {
   const valid = [];
   for (let high = BOARD_BUCKET_RANGES.high.min; high <= BOARD_BUCKET_RANGES.high.max; high += 1) {
     for (let low = BOARD_BUCKET_RANGES.low.min; low <= BOARD_BUCKET_RANGES.low.max; low += 1) {
@@ -262,22 +262,22 @@ function bucketedCards(cards) {
   return buckets;
 }
 
-function takeFromBucket(bucket, count, selectedIds) {
+function takeFromBucket(bucket, count, selectedIds, randomInt) {
   const available = bucket.filter((card) => !selectedIds.has(card.card_id));
-  const sampled = sampleCards(available, count);
+  const sampled = sampleCards(available, count, randomInt);
   for (const card of sampled) selectedIds.add(card.card_id);
   return sampled;
 }
 
-function sampleBucketedBoard(pool, size = BOARD_SIZE) {
-  if (pool.length <= size) return shuffleCards(pool);
+function sampleBucketedBoard(pool, size, randomInt) {
+  if (pool.length <= size) return shuffle(pool, randomInt);
   const buckets = bucketedCards(pool);
-  const composition = boardComposition(size);
+  const composition = boardComposition(size, randomInt);
   const selectedIds = new Set();
   const selected = [
-    ...takeFromBucket(buckets.high, composition.high, selectedIds),
-    ...takeFromBucket(buckets.mid, composition.mid, selectedIds),
-    ...takeFromBucket(buckets.low, composition.low, selectedIds),
+    ...takeFromBucket(buckets.high, composition.high, selectedIds, randomInt),
+    ...takeFromBucket(buckets.mid, composition.mid, selectedIds, randomInt),
+    ...takeFromBucket(buckets.low, composition.low, selectedIds, randomInt),
   ];
 
   if (selected.length < size) {
@@ -288,10 +288,10 @@ function sampleBucketedBoard(pool, size = BOARD_SIZE) {
       ...pool,
     ];
     const remaining = fallbackOrder.filter((card) => !selectedIds.has(card.card_id));
-    selected.push(...sampleCards(remaining, size - selected.length));
+    selected.push(...sampleCards(remaining, size - selected.length, randomInt));
   }
 
-  return shuffleCards(selected).slice(0, size);
+  return shuffle(selected, randomInt).slice(0, size);
 }
 
 function markBoardShown(state, franchiseKey, board) {
@@ -301,7 +301,7 @@ function markBoardShown(state, franchiseKey, board) {
   state.shownFranchiseKeys.add(franchiseKey);
 }
 
-function randomTeam(teams, excludedTeams = null) {
+function randomTeam(teams, excludedTeams = null, randomInt = crypto.randomInt) {
   const excluded = excludedTeams instanceof Set
     ? excludedTeams
     : new Set(Array.isArray(excludedTeams) ? excludedTeams : [excludedTeams].filter(Boolean));
@@ -315,9 +315,12 @@ function selectableCards(board, state) {
   return board.filter((card) => disabledReasonForCard(card, state) === null);
 }
 
-function generateBoard({ byTeam, teams, state, team = null, position = null, strictBoardPosition = false, size = BOARD_SIZE }) {
+function generateBoard({
+  byTeam, teams, state, team = null, position = null, strictBoardPosition = false,
+  size = BOARD_SIZE, randomInt = crypto.randomInt,
+}) {
   for (let attempt = 0; attempt < 200; attempt += 1) {
-    const franchiseKey = team || randomTeam(teams, state.shownFranchiseKeys);
+    const franchiseKey = team || randomTeam(teams, state.shownFranchiseKeys, randomInt);
     let pool = byTeam.get(franchiseKey) || [];
     if (position) {
       pool = pool.filter((card) => (
@@ -328,7 +331,7 @@ function generateBoard({ byTeam, teams, state, team = null, position = null, str
     }
     let unseenPool = pool.filter((card) => !state.shownCardIds?.has(card.card_id));
     if (unseenPool.length < size) unseenPool = pool;
-    const board = sampleBucketedBoard(unseenPool, size);
+    const board = sampleBucketedBoard(unseenPool, size, randomInt);
     if (selectableCards(board, state).length > 0) {
       markBoardShown(state, franchiseKey, board);
       return { franchiseKey, board };
@@ -337,9 +340,37 @@ function generateBoard({ byTeam, teams, state, team = null, position = null, str
   throw new Error("Unable to generate a selectable board");
 }
 
-function startDraft({ byTeam, teams }) {
+function generateRegularBoard({ byTeam, teams, state }) {
+  if (!state.friendCode) return generateBoard({ byTeam, teams, state });
+
+  // Picks and wild cards never change the shared franchise schedule or card pool.
+  const order = shuffle(teams, seededRandom(`friends:v1:${state.friendCode}:teams`));
+  const franchiseKey = order[(state.pickNumber - 1) % order.length];
+  const seed = `friends:v1:${state.friendCode}:pick:${state.pickNumber}`;
+  const board = sampleBucketedBoard(byTeam.get(franchiseKey), BOARD_SIZE, seededRandom(seed));
+  if (selectableCards(board, state).length === 0) {
+    // Choose a franchise with a legal pick before drawing a personal fallback.
+    const eligibleTeams = teams.filter((team) => selectableCards(byTeam.get(team), state).length > 0);
+    if (eligibleTeams.length === 0) throw new Error("Unable to generate a selectable board");
+    const randomInt = seededRandom(`${seed}:fallback`);
+    const fallbackTeam = randomTeam(eligibleTeams, state.shownFranchiseKeys, randomInt);
+    const pool = byTeam.get(fallbackTeam);
+    const fallback = sampleBucketedBoard(pool, BOARD_SIZE, randomInt);
+    if (selectableCards(fallback, state).length === 0) {
+      const legal = selectableCards(pool, state);
+      fallback[fallback.length - 1] = legal[randomInt(legal.length)];
+    }
+    markBoardShown(state, fallbackTeam, fallback);
+    return { franchiseKey: fallbackTeam, board: fallback };
+  }
+  markBoardShown(state, franchiseKey, board);
+  return { franchiseKey, board };
+}
+
+function startDraft({ byTeam, teams, friendCode }) {
   const state = {
     id: crypto.randomUUID(),
+    friendCode,
     status: "drafting",
     pickNumber: 1,
     roster: emptyRoster(),
@@ -364,7 +395,7 @@ function startDraft({ byTeam, teams }) {
     createdAt: new Date().toISOString(),
     completedAt: null,
   };
-  const { franchiseKey, board } = generateBoard({ byTeam, teams, state });
+  const { franchiseKey, board } = generateRegularBoard({ byTeam, teams, state });
   state.currentFranchiseKey = franchiseKey;
   state.currentBoard = board;
   return state;
@@ -373,6 +404,7 @@ function startDraft({ byTeam, teams }) {
 function stateResponse(state) {
   return {
     draftRunId: state.id,
+    ...(state.friendCode && { friendCode: state.friendCode }),
     status: state.status,
     pickNumber: state.pickNumber,
     currentFranchiseKey: state.currentFranchiseKey,
@@ -488,12 +520,13 @@ function selectCard({ state, cardId, byTeam, teams }) {
   }
 
   state.pickNumber += 1;
-  if (state.boardPicksRemaining > 1) {
+  if (state.boardPicksRemaining > 1
+    && (!state.friendCode || selectableCards(state.currentBoard, state).length > 0)) {
     state.boardPicksRemaining -= 1;
     return { selectedCard, state };
   }
 
-  const nextBoard = generateBoard({ byTeam, teams, state });
+  const nextBoard = generateRegularBoard({ byTeam, teams, state });
   state.currentFranchiseKey = nextBoard.franchiseKey;
   state.currentBoard = nextBoard.board;
   state.boardPicksRemaining = 1;

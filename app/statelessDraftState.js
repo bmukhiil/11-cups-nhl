@@ -16,6 +16,7 @@ function stateToTokenPayload(state, { now = new Date(), ttlMs = DRAFT_TTL_MS } =
   return {
     version: 1,
     draftRunId: state.id,
+    ...(state.friendCode && { friendCode: state.friendCode }),
     status: state.status,
     pickNumber: state.pickNumber,
     roster: {
@@ -85,6 +86,7 @@ function tokenPayloadToState(payload, cardById) {
 
   return {
     id: payload.draftRunId,
+    friendCode: payload.friendCode,
     status: payload.status,
     pickNumber: payload.pickNumber,
     roster: {

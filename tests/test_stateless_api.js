@@ -19,6 +19,66 @@ test("stateless start returns token and public draft", () => {
   assert.equal(result.draft.board[0].rawCardPs, undefined);
 });
 
+test("four friend drafts share regular boards after different picks and a reshuffle", () => {
+  const store = loadCardStore();
+  const secret = SECRET;
+  const code = "CUPSDRFT";
+  const players = Array.from({ length: 4 }, () => (
+    startDraftAction({ store, secret, friendCode: ` ${code.toLowerCase()} ` })
+  ));
+  const [host, ...joined] = players;
+  const boardIds = (player) => player.draft.board.map((card) => card.cardId);
+  assert.equal(new Set(players.map((player) => player.draft.draftRunId)).size, 4);
+  for (const player of joined) {
+    assert.equal(player.draft.currentFranchiseKey, host.draft.currentFranchiseKey);
+    assert.deepEqual(boardIds(player), boardIds(host));
+  }
+
+  const next = players.map((player, index) => (
+    selectCardAction({ store, secret, draftToken: player.draftToken, cardId: boardIds(player)[index] })
+  ));
+  assert.equal(new Set(next.map((player) => player.selectedCard.cardId)).size, 4);
+  for (const player of next) {
+    assert.equal(player.draft.friendCode, code);
+    assert.equal(player.draft.currentFranchiseKey, next[0].draft.currentFranchiseKey);
+    assert.deepEqual(boardIds(player), boardIds(next[0]));
+  }
+
+  next[0] = useLifelineAction({
+    store, secret, draftToken: next[0].draftToken, type: "same_team_shuffle",
+  });
+  assert.equal(next[0].draft.lifelines.same_team_shuffle, 0);
+  assert.equal(next[1].draft.lifelines.same_team_shuffle, 1);
+  const third = next.map((player) => selectCardAction({
+    store, secret, draftToken: player.draftToken,
+    cardId: player.draft.board.find((card) => card.selectable).cardId,
+  }));
+  for (const player of third) {
+    assert.equal(player.draft.pickNumber, 3);
+    assert.equal(player.draft.currentFranchiseKey, third[0].draft.currentFranchiseKey);
+    assert.deepEqual(boardIds(player), boardIds(third[0]));
+  }
+});
+
+test("start rejects malformed friend codes", () => {
+  const store = loadCardStore();
+  for (const friendCode of ["", "AAAAAAA0", "TOO-LONG-123", false]) {
+    assert.throws(
+      () => startDraftAction({ store, friendCode, secret: SECRET }),
+      /valid 8-character friend code/,
+    );
+  }
+});
+
+test("creating a friend code produces an invite that replays the opening board", () => {
+  const store = loadCardStore();
+  const host = startDraftAction({ store, secret: SECRET, friendCode: null }).draft;
+  assert.match(host.friendCode, /^[A-HJ-NP-Z2-9]{8}$/);
+  const guest = startDraftAction({ store, secret: SECRET, friendCode: host.friendCode }).draft;
+  assert.equal(guest.currentFranchiseKey, host.currentFranchiseKey);
+  assert.deepEqual(guest.board, host.board);
+});
+
 test("stateless select returns a new token and selected card reveal", () => {
   const store = loadCardStore();
   const started = startDraftAction({ store, secret: SECRET, now: new Date("2026-01-01T00:00:00.000Z") });

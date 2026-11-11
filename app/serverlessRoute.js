@@ -35,7 +35,10 @@ function validateOrigin(req) {
   const allowed = process.env.ALLOWED_ORIGIN;
   if (!allowed) throw new Error("ALLOWED_ORIGIN is required in production");
   const origin = req.headers.origin;
-  if (origin && origin !== allowed) throw new Error("Origin is not allowed");
+  // Vercel supplies the domain that routed the request to this deployment.
+  const sameVercelOrigin = process.env.VERCEL === "1" && req.headers.host
+    && origin === `https://${req.headers.host}`;
+  if (origin && origin !== allowed && !sameVercelOrigin) throw new Error("Origin is not allowed");
 }
 
 async function applyRateLimit(req, route) {

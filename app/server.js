@@ -14,7 +14,7 @@ const ROOT = path.join(__dirname, "..");
 const PUBLIC_DIR = path.join(__dirname, "public");
 const MAX_BODY_BYTES = 32 * 1024;
 const ALLOWED_POST_FIELDS = {
-  "/api/draft/start": [],
+  "/api/draft/start": ["friendCode"],
   "/api/draft/select": ["draftToken", "cardId"],
   "/api/draft/lifeline": ["draftToken", "type", "position"],
 };
@@ -206,7 +206,7 @@ async function handleApi(req, res, pathname) {
   const body = await readBody(req, pathname);
 
   if (pathname === "/api/draft/start") {
-    sendJson(res, 200, startDraftAction({ store }));
+    sendJson(res, 200, startDraftAction({ store, friendCode: body.friendCode }));
     return;
   }
 

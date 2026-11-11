@@ -1,3 +1,4 @@
+const { randomInt } = require("node:crypto");
 const {
   selectCard,
   startDraft,
@@ -26,8 +27,25 @@ function responseForState(state, secret, options = {}) {
   };
 }
 
-function startDraftAction({ store, secret = secretFromEnv(), now = new Date() }) {
-  const state = startDraft(store);
+const FRIEND_CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+const FRIEND_CODE_LENGTH = 8;
+const FRIEND_CODE_PATTERN = new RegExp(`^[${FRIEND_CODE_ALPHABET}]{${FRIEND_CODE_LENGTH}}$`);
+
+function resolveFriendCode(code) {
+  if (code === undefined) return undefined;
+  if (code === null) {
+    return Array.from({ length: FRIEND_CODE_LENGTH }, () => (
+      FRIEND_CODE_ALPHABET[randomInt(FRIEND_CODE_ALPHABET.length)]
+    )).join("");
+  }
+
+  const normalized = typeof code === "string" ? code.trim().toUpperCase() : "";
+  if (!FRIEND_CODE_PATTERN.test(normalized)) throw new Error("Enter a valid 8-character friend code.");
+  return normalized;
+}
+
+function startDraftAction({ store, friendCode, secret = secretFromEnv(), now = new Date() }) {
+  const state = startDraft({ ...store, friendCode: resolveFriendCode(friendCode) });
   state.expiresAt = new Date(new Date(now).getTime() + 2 * 60 * 60 * 1000).toISOString();
   return responseForState(state, secret, { now });
 }

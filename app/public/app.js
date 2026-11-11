@@ -2,6 +2,7 @@ const state = {
   draft: null,
   draftToken: null,
   lastSelectedCard: null,
+  pending: false,
 };
 
 const els = {
@@ -14,6 +15,16 @@ const els = {
   lifelines: document.querySelector("#lifelines"),
   scoreChip: document.querySelector("#score-chip"),
   newGame: document.querySelector("#new-game"),
+  draftError: document.querySelector("#draft-error"),
+  playFriend: document.querySelector("#play-friend"),
+  friendDialog: document.querySelector("#friend-dialog"),
+  friendShare: document.querySelector("#friend-share"),
+  activeFriendCode: document.querySelector("#active-friend-code"),
+  copyInvite: document.querySelector("#copy-invite"),
+  createFriendCode: document.querySelector("#create-friend-code"),
+  joinFriend: document.querySelector("#join-friend"),
+  friendCode: document.querySelector("#friend-code"),
+  friendStatus: document.querySelector("#friend-status"),
   helpBtn: document.querySelector("#help-btn"),
   openRosterBtn: document.querySelector("#open-roster"),
   openWildBtn: document.querySelector("#open-wildcards"),
@@ -207,7 +218,7 @@ function renderBoard() {
       ${card.selectable ? "" : `<p class="card-secret">${card.disabledReason.replace("_", " ")}</p>`}
     `;
     wireCardImages(button);
-    button.addEventListener("click", () => selectCard(card.cardId));
+    button.addEventListener("click", () => selectCard(card.cardId).catch(showDraftError));
     els.board.appendChild(button);
   }
 }
@@ -247,7 +258,7 @@ function renderLifelines() {
     button.className = "life-button";
     button.disabled = state.draft?.status !== "drafting" || (lifelines[type] || 0) <= 0;
     button.textContent = `${label} (${lifelines[type] || 0})`;
-    button.addEventListener("click", () => useLifeline(type));
+    button.addEventListener("click", () => useLifeline(type).catch(showDraftError));
     els.lifelines.appendChild(button);
   }
 }
@@ -304,6 +315,12 @@ function renderResult() {
     <p class="eyebrow">Result</p>
     <h2>${state.draft.rings} of 6 cups</h2>
     <p class="result-tagline">${ringMessage(state.draft.rings)}</p>
+    ${state.draft.friendCode ? `
+      <div class="friend-result">
+        <button class="life-button" type="button" data-copy-result>Copy Result</button>
+        <p class="draft-status" role="status"></p>
+      </div>
+    ` : ""}
     <div class="result-grid">
       <div class="result-box">
         <p class="eyebrow">Final score</p>
@@ -383,23 +400,75 @@ function renderMobileActions() {
   els.openWildBtn.disabled = state.draft?.status !== "drafting" || wildLeft <= 0;
 }
 
-async function newGame() {
-  state.lastSelectedCard = null;
-  const payload = await api("/api/draft/start", { method: "POST", body: "{}" });
-  state.draftToken = payload.draftToken;
-  state.draft = payload.draft;
-  render();
+function showDraftError(error) {
+  els.draftError.textContent = error.message;
+  els.draftError.hidden = false;
+}
+
+async function updateDraft(action, body) {
+  if (state.pending) return false;
+  state.pending = true;
+  els.draftError.hidden = true;
+  try {
+    const payload = await api(`/api/draft/${action}`, {
+      method: "POST",
+      body: JSON.stringify(body),
+    });
+    state.draftToken = payload.draftToken;
+    state.draft = payload.draft;
+    if (action === "start" || payload.selectedCard) {
+      state.lastSelectedCard = payload.selectedCard || null;
+    }
+    closeSheet();
+    render();
+    return true;
+  } finally {
+    state.pending = false;
+  }
+}
+
+function friendUrl(code) {
+  const url = new URL(location.href);
+  if (code) url.searchParams.set("friend", code);
+  else url.searchParams.delete("friend");
+  return url;
+}
+
+async function copyText(text, status, message) {
+  try {
+    await navigator.clipboard.writeText(text);
+    status.textContent = message;
+  } catch {
+    status.textContent = text;
+  }
+}
+
+async function newGame(friendCode) {
+  if (!await updateDraft("start", { friendCode })) return false;
+  const code = state.draft.friendCode;
+  els.friendShare.hidden = !code;
+  els.activeFriendCode.value = code || "";
+  els.playFriend.textContent = code ? `Friend draft · ${code}` : "Play a Friend";
+  history.replaceState(null, "", friendUrl(code));
+  return true;
+}
+
+async function startFriendDraft(code) {
+  if (state.pending) return;
+  els.friendStatus.textContent = "Starting draft…";
+  try {
+    if (await newGame(code)) {
+      els.friendStatus.textContent = "";
+      if (code === null) els.activeFriendCode.select();
+      else els.friendDialog.close();
+    }
+  } catch (error) {
+    els.friendStatus.textContent = error.message;
+  }
 }
 
 async function selectCard(cardId) {
-  const payload = await api("/api/draft/select", {
-    method: "POST",
-    body: JSON.stringify({ draftToken: state.draftToken, cardId }),
-  });
-  state.draftToken = payload.draftToken;
-  state.lastSelectedCard = payload.selectedCard;
-  state.draft = payload.draft;
-  render();
+  await updateDraft("select", { draftToken: state.draftToken, cardId });
 }
 
 // Inline position picker shown *inside* the wild-card sheet (not a floating modal).
@@ -423,14 +492,7 @@ async function useLifeline(type, position = null) {
     openPositionPicker();
     return;
   }
-  const payload = await api("/api/draft/lifeline", {
-    method: "POST",
-    body: JSON.stringify({ draftToken: state.draftToken, type, position }),
-  });
-  state.draftToken = payload.draftToken;
-  state.draft = payload.draft;
-  closeSheet();
-  render();
+  await updateDraft("lifeline", { draftToken: state.draftToken, type, position });
 }
 
 function openHelp() {
@@ -484,8 +546,7 @@ els.positionPicker.querySelector("[data-picker-back]").addEventListener("click",
 els.positionActions.addEventListener("click", async (event) => {
   const button = event.target.closest("[data-slot]");
   if (!button || button.disabled) return;
-  await useLifeline("same_team_choose_position", button.dataset.slot);
-  closePositionPicker();
+  await useLifeline("same_team_choose_position", button.dataset.slot).catch(showDraftError);
 });
 for (const button of document.querySelectorAll("[data-close-sheet]")) {
   button.addEventListener("click", closeSheet);
@@ -493,8 +554,35 @@ for (const button of document.querySelectorAll("[data-close-sheet]")) {
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closeSheet();
 });
-els.newGame.addEventListener("click", newGame);
-newGame().catch((error) => {
+els.newGame.addEventListener("click", () => newGame().catch(showDraftError));
+els.playFriend.addEventListener("click", () => {
+  els.friendStatus.textContent = "";
+  els.friendDialog.showModal();
+});
+els.createFriendCode.addEventListener("click", () => startFriendDraft(null));
+els.joinFriend.addEventListener("submit", (event) => {
+  event.preventDefault();
+  startFriendDraft(els.friendCode.value);
+});
+els.copyInvite.addEventListener("click", () => {
+  copyText(friendUrl(state.draft.friendCode).href, els.friendStatus, "Invite link copied.");
+});
+els.result.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-copy-result]");
+  if (!button) return;
+  const { friendCode, rings, finalScore } = state.draft;
+  const result = `6 Cups NHL · ${friendCode} · ${rings}/6 Cups · Final score ${fmt(finalScore)}`;
+  copyText(result, button.nextElementSibling, "Result copied.");
+});
+
+const inviteCode = new URLSearchParams(location.search).get("friend");
+newGame(inviteCode ?? undefined).catch((error) => {
   els.teamLabel.textContent = "Failed to load";
-  els.board.innerHTML = `<p>${error.message}</p>`;
+  if (inviteCode === null) {
+    showDraftError(error);
+    return;
+  }
+  els.friendCode.value = inviteCode;
+  els.friendStatus.textContent = error.message;
+  if (!els.friendDialog.open) els.friendDialog.showModal();
 });
